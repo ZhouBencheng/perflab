@@ -1,0 +1,9 @@
+jdks/
+tools/
+SPECjvm2008/*
+!SPECjvm2008/results/
+!SPECjvm2008/results/**
+
+perf_compress_*/out.folded
+perf_compress_*/out.perf
+perf_compress_*/perf.data

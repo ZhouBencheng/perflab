@@ -1,0 +1,98 @@
+================================
+SPECjvm2008 Peak
+================================
+n/a n/a
+Tencent OpenJDK 64-Bit Server VM
+Tested by: n/a Test date: Sat Jul 05 12:42:00 CST 2025
+Run is valid, but not compliant
+
+================================
+compress                      836.9                                   
+crypto                        1476.73                                 
+derby                         1558.04                                 
+Noncompliant composite result: 1244.09 ops/m
+================================
+
+
+Submitter                     n/a                                     
+Submitter URL                 n/a                                     
+SPEC license                  n/a                                     
+Tester                        ben                                     
+Location                      n/a                                     
+Test date:                    Sat Jul 05 12:42:00 CST 2025            
+OS name                       Linux                                   
+OS available                  n/a                                     
+OS address bits               n/a                                     
+OS tuning                                                             
+Filesystem                    n/a                                     
+Other s/w name                                                        
+Other s/w tuning                                                      
+Other s/w available                                                   
+Vendor                        Tencent                                 
+Vendor URL                    http://jdk.oa.com/                      
+JVM name                      OpenJDK 64-Bit Server VM                
+JVM version                   25.452-b1 mixed mode, sharing           
+JVM available                 n/a                                     
+Java Specification            1.8                                     
+JVM address bits              64                                      
+JVM initial heap memory       n/a                                     
+JVM maximum heap memory       n/a                                     
+JVM command line              n/a                                     
+JVM command line startup                                              
+JVM launcher startup          default                                 
+Additional JVM tuning                                                 
+JVM class path                /home/ben/workspace/perflab/SPECjvm2008/SPECjvm2008.jar
+JVM boot class path           /home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/lib/resources.jar:/home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/lib/rt.jar:/home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/lib/sunrsasign.jar:/home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/lib/jsse.jar:/home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/lib/jce.jar:/home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/lib/charsets.jar:/home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/lib/jfr.jar:/home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/jre/classes
+HW vendor                     n/a                                     
+HW vendor's URL               n/a                                     
+HW model                      n/a                                     
+HW available                  n/a                                     
+CPU vendor                    n/a                                     
+CPU vendor's URL              n/a                                     
+CPU name                      n/a                                     
+CPU frequency                 n/a                                     
+# of logical cpus             n/a                                     
+# of chips                    n/a                                     
+# of cores                    n/a                                     
+Cores per chip                n/a                                     
+Threads per core              n/a                                     
+Threading enabled             n/a                                     
+HW address bits               n/a                                     
+Primary cache                 n/a                                     
+Secondary cache               n/a                                     
+Other cache                   n/a                                     
+Memory size                   n/a                                     
+Memory details                n/a                                     
+Other HW details              n/a                                     
+
+Not a compliant sequence of benchmarks for publication.
+Property specjvm.run.checksum.validation must be true for publication.
+Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+specjvm.benchmark.warmup.time=30
+specjvm.home.dir=/home/ben/workspace/perflab/SPECjvm2008
+
+Details of Runs
+---------------
+PASSED
+
+Benchmark                     Iteration      Expected(ms)   Actual(ms)     Operations     ops/m          
+---------------------------------------------------------------------------------------------------
+
+compress                      warmup         30000          30000          413.57         827.13         
+compress                      iteration 1    60000          60000          836.90         836.90         
+
+crypto.aes                    warmup         30000          30000          131.61         263.22         
+crypto.aes                    iteration 1    60000          60000          268.16         268.16         
+
+crypto.rsa                    warmup         30000          30000          2888.73        5777.46        
+crypto.rsa                    iteration 1    60000          60000          5818.74        5818.74        
+
+crypto.signverify             warmup         30000          30000          1026.64        2053.29        
+crypto.signverify             iteration 1    60000          60000          2063.83        2063.83        
+
+derby                         warmup         30000          30000          724.02         1448.04        
+derby                         iteration 1    60000          60000          1558.04        1558.04        
+
+SPECjvm2008 Version: [SPECjvm2008 1.01 (20090519)]
+Copyright (C) 2008-2025 SPEC. All rights reserved

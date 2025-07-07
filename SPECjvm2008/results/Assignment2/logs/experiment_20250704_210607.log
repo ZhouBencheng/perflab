@@ -1,0 +1,1779 @@
+==============================
+SPECjvm2008 Batch Runner Start
+Results will be saved in: /home/ben/workspace/perflab/SPECjvm2008/results/test_20250704_210607
+==============================
+
+--------------------------------------
+Testing JDK: bisheng
+Java Command: /home/ben/workspace/perflab/jdks/bisheng-jdk1.8.0_452/bin/java
+--------------------------------------
+>>> Running iteration 1 for bisheng
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 21:06:07 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 21:06:07 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:06:19 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:06:50 CST 2025
+Warmup (30s) result: 1446.44 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:06:50 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:07:51 CST 2025
+Iteration 1 (60s) result: 1540.61 ops/m
+
+Valid run!
+Score on derby: 1540.61 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:07:51 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:08:23 CST 2025
+Warmup (30s) result: 864.73 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:08:23 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:09:25 CST 2025
+Iteration 1 (60s) result: 869.32 ops/m
+
+Valid run!
+Score on compress: 869.32 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:09:25 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:10:01 CST 2025
+Warmup (30s) result: 291.18 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:10:01 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:11:07 CST 2025
+Iteration 1 (60s) result: 292.67 ops/m
+
+Valid run!
+Score on crypto.aes: 292.67 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:11:07 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:11:37 CST 2025
+Warmup (30s) result: 5724.98 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:11:37 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:12:37 CST 2025
+Iteration 1 (60s) result: 5757.79 ops/m
+
+Valid run!
+Score on crypto.rsa: 5757.79 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:12:37 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:13:08 CST 2025
+Warmup (30s) result: 2154.36 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:13:08 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:14:09 CST 2025
+Iteration 1 (60s) result: 2160.70 ops/m
+
+Valid run!
+Score on crypto.signverify: 2160.70 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.001/SPECjvm2008.001.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.001
+
+Noncompliant composite result: 1272.48 ops/m
+>>> Completed iteration 1 for bisheng
+
+>>> Running iteration 2 for bisheng
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 21:14:10 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 21:14:10 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:14:22 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:14:53 CST 2025
+Warmup (30s) result: 1505.43 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:14:53 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:15:54 CST 2025
+Iteration 1 (60s) result: 1584.28 ops/m
+
+Valid run!
+Score on derby: 1584.28 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:15:54 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:16:26 CST 2025
+Warmup (30s) result: 844.82 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:16:26 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:17:28 CST 2025
+Iteration 1 (60s) result: 852.96 ops/m
+
+Valid run!
+Score on compress: 852.96 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:17:28 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:18:03 CST 2025
+Warmup (30s) result: 300.23 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:18:03 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:19:07 CST 2025
+Iteration 1 (60s) result: 304.61 ops/m
+
+Valid run!
+Score on crypto.aes: 304.61 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:19:07 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:19:38 CST 2025
+Warmup (30s) result: 5740.69 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:19:38 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:20:38 CST 2025
+Iteration 1 (60s) result: 5770.96 ops/m
+
+Valid run!
+Score on crypto.rsa: 5770.96 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:20:38 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:21:09 CST 2025
+Warmup (30s) result: 2152.85 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:21:09 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:22:10 CST 2025
+Iteration 1 (60s) result: 2163.20 ops/m
+
+Valid run!
+Score on crypto.signverify: 2163.20 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.002/SPECjvm2008.002.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.002
+
+Noncompliant composite result: 1282.45 ops/m
+>>> Completed iteration 2 for bisheng
+
+>>> Running iteration 3 for bisheng
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 21:22:11 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 21:22:11 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:22:23 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:22:54 CST 2025
+Warmup (30s) result: 1484.21 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:22:54 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:23:55 CST 2025
+Iteration 1 (60s) result: 1559.87 ops/m
+
+Valid run!
+Score on derby: 1559.87 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:23:55 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:24:26 CST 2025
+Warmup (30s) result: 851.11 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:24:26 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:25:28 CST 2025
+Iteration 1 (60s) result: 860.73 ops/m
+
+Valid run!
+Score on compress: 860.73 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:25:28 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:26:03 CST 2025
+Warmup (30s) result: 302.05 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:26:03 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:27:09 CST 2025
+Iteration 1 (60s) result: 306.96 ops/m
+
+Valid run!
+Score on crypto.aes: 306.96 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:27:09 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:27:39 CST 2025
+Warmup (30s) result: 5663.39 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:27:39 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:28:39 CST 2025
+Iteration 1 (60s) result: 5633.93 ops/m
+
+Valid run!
+Score on crypto.rsa: 5633.93 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:28:39 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:29:10 CST 2025
+Warmup (30s) result: 2152.56 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:29:10 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:30:11 CST 2025
+Iteration 1 (60s) result: 2156.94 ops/m
+
+Valid run!
+Score on crypto.signverify: 2156.94 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.003/SPECjvm2008.003.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.003
+
+Noncompliant composite result: 1276.96 ops/m
+>>> Completed iteration 3 for bisheng
+
+
+--------------------------------------
+Testing JDK: openjdk
+Java Command: /home/ben/workspace/perflab/jdks/jdk1.8.0_441/bin/java
+--------------------------------------
+>>> Running iteration 1 for openjdk
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 21:30:12 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 21:30:12 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:30:24 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:30:55 CST 2025
+Warmup (30s) result: 1508.48 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:30:55 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:31:56 CST 2025
+Iteration 1 (60s) result: 1564.34 ops/m
+
+Valid run!
+Score on derby: 1564.34 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:31:56 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:32:28 CST 2025
+Warmup (30s) result: 846.19 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:32:28 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:33:30 CST 2025
+Iteration 1 (60s) result: 855.16 ops/m
+
+Valid run!
+Score on compress: 855.16 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:33:30 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:34:04 CST 2025
+Warmup (30s) result: 284.47 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:34:04 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:35:08 CST 2025
+Iteration 1 (60s) result: 287.47 ops/m
+
+Valid run!
+Score on crypto.aes: 287.47 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:35:08 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:35:39 CST 2025
+Warmup (30s) result: 5771.06 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:35:39 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:36:39 CST 2025
+Iteration 1 (60s) result: 5776.91 ops/m
+
+Valid run!
+Score on crypto.rsa: 5776.91 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:36:39 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:37:10 CST 2025
+Warmup (30s) result: 2093.68 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:37:10 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:38:11 CST 2025
+Iteration 1 (60s) result: 2097.71 ops/m
+
+Valid run!
+Score on crypto.signverify: 2097.71 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.004/SPECjvm2008.004.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.004
+
+Noncompliant composite result: 1265.77 ops/m
+>>> Completed iteration 1 for openjdk
+
+>>> Running iteration 2 for openjdk
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 21:38:12 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 21:38:12 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:38:24 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:38:55 CST 2025
+Warmup (30s) result: 1464.95 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:38:55 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:39:56 CST 2025
+Iteration 1 (60s) result: 1583.46 ops/m
+
+Valid run!
+Score on derby: 1583.46 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:39:56 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:40:28 CST 2025
+Warmup (30s) result: 847.08 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:40:28 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:41:30 CST 2025
+Iteration 1 (60s) result: 854.02 ops/m
+
+Valid run!
+Score on compress: 854.02 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:41:30 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:42:04 CST 2025
+Warmup (30s) result: 287.70 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:42:04 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:43:10 CST 2025
+Iteration 1 (60s) result: 289.01 ops/m
+
+Valid run!
+Score on crypto.aes: 289.01 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:43:10 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:43:41 CST 2025
+Warmup (30s) result: 5805.54 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:43:41 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:44:41 CST 2025
+Iteration 1 (60s) result: 5817.28 ops/m
+
+Valid run!
+Score on crypto.rsa: 5817.28 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:44:41 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:45:12 CST 2025
+Warmup (30s) result: 2090.33 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:45:12 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:46:13 CST 2025
+Iteration 1 (60s) result: 2097.48 ops/m
+
+Valid run!
+Score on crypto.signverify: 2097.48 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.005/SPECjvm2008.005.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.005
+
+Noncompliant composite result: 1272.05 ops/m
+>>> Completed iteration 2 for openjdk
+
+>>> Running iteration 3 for openjdk
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 21:46:14 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 21:46:14 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:46:51 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:47:22 CST 2025
+Warmup (30s) result: 1408.83 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:47:22 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:48:23 CST 2025
+Iteration 1 (60s) result: 1597.32 ops/m
+
+Valid run!
+Score on derby: 1597.32 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:48:23 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:48:55 CST 2025
+Warmup (30s) result: 837.07 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:48:55 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:49:57 CST 2025
+Iteration 1 (60s) result: 852.53 ops/m
+
+Valid run!
+Score on compress: 852.53 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:49:57 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:50:33 CST 2025
+Warmup (30s) result: 297.15 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:50:33 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:51:37 CST 2025
+Iteration 1 (60s) result: 300.34 ops/m
+
+Valid run!
+Score on crypto.aes: 300.34 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:51:37 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:52:07 CST 2025
+Warmup (30s) result: 5689.98 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:52:07 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:53:07 CST 2025
+Iteration 1 (60s) result: 5710.22 ops/m
+
+Valid run!
+Score on crypto.rsa: 5710.22 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:53:07 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:53:38 CST 2025
+Warmup (30s) result: 2101.10 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:53:38 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:54:39 CST 2025
+Iteration 1 (60s) result: 2110.50 ops/m
+
+Valid run!
+Score on crypto.signverify: 2110.50 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.006/SPECjvm2008.006.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.006
+
+Noncompliant composite result: 1278.71 ops/m
+>>> Completed iteration 3 for openjdk
+
+
+--------------------------------------
+Testing JDK: dragonwell
+Java Command: /home/ben/workspace/perflab/jdks/dragonwell-8.25.24/bin/java
+--------------------------------------
+>>> Running iteration 1 for dragonwell
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 21:54:40 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 21:54:40 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:54:52 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:55:23 CST 2025
+Warmup (30s) result: 1519.33 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:55:23 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:56:24 CST 2025
+Iteration 1 (60s) result: 1581.04 ops/m
+
+Valid run!
+Score on derby: 1581.04 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:56:24 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:56:56 CST 2025
+Warmup (30s) result: 851.39 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:56:56 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:57:58 CST 2025
+Iteration 1 (60s) result: 859.26 ops/m
+
+Valid run!
+Score on compress: 859.26 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:57:58 CST 2025
+Warmup (30s) ends:   Fri Jul 04 21:58:33 CST 2025
+Warmup (30s) result: 299.40 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 21:58:33 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 21:59:36 CST 2025
+Iteration 1 (60s) result: 301.94 ops/m
+
+Valid run!
+Score on crypto.aes: 301.94 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 21:59:36 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:00:07 CST 2025
+Warmup (30s) result: 5576.41 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:00:07 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:01:07 CST 2025
+Iteration 1 (60s) result: 5784.61 ops/m
+
+Valid run!
+Score on crypto.rsa: 5784.61 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:01:07 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:01:38 CST 2025
+Warmup (30s) result: 2107.56 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:01:38 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:02:38 CST 2025
+Iteration 1 (60s) result: 2113.65 ops/m
+
+Valid run!
+Score on crypto.signverify: 2113.65 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.007/SPECjvm2008.007.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.007
+
+Noncompliant composite result: 1280.5 ops/m
+>>> Completed iteration 1 for dragonwell
+
+>>> Running iteration 2 for dragonwell
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 22:02:40 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 22:02:40 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:02:52 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:03:23 CST 2025
+Warmup (30s) result: 1524.23 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:03:23 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:04:24 CST 2025
+Iteration 1 (60s) result: 1599.63 ops/m
+
+Valid run!
+Score on derby: 1599.63 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:04:24 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:04:55 CST 2025
+Warmup (30s) result: 854.09 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:04:55 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:05:57 CST 2025
+Iteration 1 (60s) result: 864.23 ops/m
+
+Valid run!
+Score on compress: 864.23 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:05:57 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:06:31 CST 2025
+Warmup (30s) result: 281.71 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:06:31 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:07:36 CST 2025
+Iteration 1 (60s) result: 285.85 ops/m
+
+Valid run!
+Score on crypto.aes: 285.85 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:07:36 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:08:06 CST 2025
+Warmup (30s) result: 5701.26 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:08:06 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:09:07 CST 2025
+Iteration 1 (60s) result: 5733.03 ops/m
+
+Valid run!
+Score on crypto.rsa: 5733.03 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:09:07 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:09:37 CST 2025
+Warmup (30s) result: 2101.92 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:09:37 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:10:38 CST 2025
+Iteration 1 (60s) result: 2112.69 ops/m
+
+Valid run!
+Score on crypto.signverify: 2112.69 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.008/SPECjvm2008.008.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.008
+
+Noncompliant composite result: 1278.83 ops/m
+>>> Completed iteration 2 for dragonwell
+
+>>> Running iteration 3 for dragonwell
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 22:10:39 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 22:10:40 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:10:52 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:11:23 CST 2025
+Warmup (30s) result: 1517.60 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:11:23 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:12:24 CST 2025
+Iteration 1 (60s) result: 1590.77 ops/m
+
+Valid run!
+Score on derby: 1590.77 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:12:24 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:12:56 CST 2025
+Warmup (30s) result: 856.15 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:12:56 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:13:58 CST 2025
+Iteration 1 (60s) result: 869.53 ops/m
+
+Valid run!
+Score on compress: 869.53 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:13:58 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:14:32 CST 2025
+Warmup (30s) result: 302.50 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:14:32 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:15:38 CST 2025
+Iteration 1 (60s) result: 307.57 ops/m
+
+Valid run!
+Score on crypto.aes: 307.57 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:15:38 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:16:08 CST 2025
+Warmup (30s) result: 5689.16 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:16:08 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:17:08 CST 2025
+Iteration 1 (60s) result: 5710.73 ops/m
+
+Valid run!
+Score on crypto.rsa: 5710.73 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:17:08 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:17:39 CST 2025
+Warmup (30s) result: 2097.02 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:17:39 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:18:40 CST 2025
+Iteration 1 (60s) result: 2106.95 ops/m
+
+Valid run!
+Score on crypto.signverify: 2106.95 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.009/SPECjvm2008.009.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.009
+
+Noncompliant composite result: 1288.57 ops/m
+>>> Completed iteration 3 for dragonwell
+
+
+--------------------------------------
+Testing JDK: kona
+Java Command: /home/ben/workspace/perflab/jdks/TencentKona-8.0.22-452/bin/java
+--------------------------------------
+>>> Running iteration 1 for kona
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 22:18:41 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 22:18:41 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:18:53 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:19:24 CST 2025
+Warmup (30s) result: 1519.22 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:19:24 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:20:25 CST 2025
+Iteration 1 (60s) result: 1593.70 ops/m
+
+Valid run!
+Score on derby: 1593.70 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:20:25 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:20:57 CST 2025
+Warmup (30s) result: 852.67 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:20:57 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:21:58 CST 2025
+Iteration 1 (60s) result: 867.63 ops/m
+
+Valid run!
+Score on compress: 867.63 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:21:58 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:22:33 CST 2025
+Warmup (30s) result: 273.44 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:22:33 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:23:39 CST 2025
+Iteration 1 (60s) result: 276.23 ops/m
+
+Valid run!
+Score on crypto.aes: 276.23 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:23:39 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:24:10 CST 2025
+Warmup (30s) result: 5927.72 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:24:10 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:25:10 CST 2025
+Iteration 1 (60s) result: 5955.33 ops/m
+
+Valid run!
+Score on crypto.rsa: 5955.33 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:25:10 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:25:41 CST 2025
+Warmup (30s) result: 2113.09 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:25:41 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:26:42 CST 2025
+Iteration 1 (60s) result: 2124.20 ops/m
+
+Valid run!
+Score on crypto.signverify: 2124.20 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.010/SPECjvm2008.010.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.010
+
+Noncompliant composite result: 1280.23 ops/m
+>>> Completed iteration 1 for kona
+
+>>> Running iteration 2 for kona
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 22:26:43 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 22:26:43 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:26:55 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:27:26 CST 2025
+Warmup (30s) result: 1530.46 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:27:26 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:28:27 CST 2025
+Iteration 1 (60s) result: 1603.41 ops/m
+
+Valid run!
+Score on derby: 1603.41 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:28:27 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:28:59 CST 2025
+Warmup (30s) result: 861.82 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:28:59 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:30:01 CST 2025
+Iteration 1 (60s) result: 874.39 ops/m
+
+Valid run!
+Score on compress: 874.39 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:30:01 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:30:36 CST 2025
+Warmup (30s) result: 301.81 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:30:36 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:31:41 CST 2025
+Iteration 1 (60s) result: 306.93 ops/m
+
+Valid run!
+Score on crypto.aes: 306.93 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:31:41 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:32:12 CST 2025
+Warmup (30s) result: 5904.37 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:32:12 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:33:12 CST 2025
+Iteration 1 (60s) result: 5921.84 ops/m
+
+Valid run!
+Score on crypto.rsa: 5921.84 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:33:12 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:33:43 CST 2025
+Warmup (30s) result: 2116.13 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:33:43 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:34:43 CST 2025
+Iteration 1 (60s) result: 2123.95 ops/m
+
+Valid run!
+Score on crypto.signverify: 2123.95 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.011/SPECjvm2008.011.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.011
+
+Noncompliant composite result: 1300.46 ops/m
+>>> Completed iteration 2 for kona
+
+>>> Running iteration 3 for kona
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Base dir:          /home/ben/workspace/perflab/SPECjvm2008
+  Benchmarks:        derby compress crypto.aes crypto.rsa crypto.signverify
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.run.checksum.validation must be true for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Fri Jul 04 22:34:45 CST 2025
+Iteration 1 (1 operation) ends:   Fri Jul 04 22:34:45 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   derby
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:34:57 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:35:28 CST 2025
+Warmup (30s) result: 1506.30 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:35:28 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:36:29 CST 2025
+Iteration 1 (60s) result: 1593.29 ops/m
+
+Valid run!
+Score on derby: 1593.29 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:36:29 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:37:01 CST 2025
+Warmup (30s) result: 854.09 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:37:01 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:38:02 CST 2025
+Iteration 1 (60s) result: 864.10 ops/m
+
+Valid run!
+Score on compress: 864.10 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.aes
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:38:02 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:38:36 CST 2025
+Warmup (30s) result: 285.28 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:38:36 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:39:41 CST 2025
+Iteration 1 (60s) result: 286.45 ops/m
+
+Valid run!
+Score on crypto.aes: 286.45 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.rsa
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:39:41 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:40:11 CST 2025
+Warmup (30s) result: 5898.35 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:40:11 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:41:11 CST 2025
+Iteration 1 (60s) result: 5921.61 ops/m
+
+Valid run!
+Score on crypto.rsa: 5921.61 ops/m
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   crypto.signverify
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      30s
+  Iterations:  1
+  Run length:  60s
+
+Warmup (30s) begins: Fri Jul 04 22:41:11 CST 2025
+Warmup (30s) ends:   Fri Jul 04 22:41:42 CST 2025
+Warmup (30s) result: 2112.91 ops/m
+
+Iteration 1 (60s) begins: Fri Jul 04 22:41:42 CST 2025
+Iteration 1 (60s) ends:   Fri Jul 04 22:42:43 CST 2025
+Iteration 1 (60s) result: 2118.44 ops/m
+
+Valid run!
+Score on crypto.signverify: 2118.44 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.012/SPECjvm2008.012.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.012
+
+Noncompliant composite result: 1282.36 ops/m
+>>> Completed iteration 3 for kona
+
+==============================
+All JDK runs completed!
+==============================
