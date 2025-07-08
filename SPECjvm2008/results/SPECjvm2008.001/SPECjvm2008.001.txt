@@ -3,12 +3,12 @@ SPECjvm2008 Peak
 ================================
 n/a n/a
 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM
-Tested by: n/a Test date: Sun Jul 06 22:44:37 CST 2025
+Tested by: n/a Test date: Tue Jul 08 15:23:49 CST 2025
 Run is valid, but not compliant
 
 ================================
-compress                      733.52                                  
-Noncompliant composite result: 733.52 ops/m
+compress                      719.85                                  
+Noncompliant composite result: 719.85 ops/m
 ================================
 
 
@@ -17,7 +17,7 @@ Submitter URL                 n/a
 SPEC license                  n/a                                     
 Tester                        ben                                     
 Location                      n/a                                     
-Test date:                    Sun Jul 06 22:44:37 CST 2025            
+Test date:                    Tue Jul 08 15:23:49 CST 2025            
 OS name                       Linux                                   
 OS available                  n/a                                     
 OS address bits               n/a                                     
@@ -66,7 +66,7 @@ Other HW details              n/a
 Not a compliant sequence of benchmarks for publication.
 Property specjvm.iteration.time must be at least 240 seconds for publication.
 
-specjvm.benchmark.warmup.time=30s
+specjvm.benchmark.warmup.time=60s
 
 Details of Runs
 ---------------
@@ -75,8 +75,8 @@ PASSED
 Benchmark                     Iteration      Expected(ms)   Actual(ms)     Operations     ops/m          
 ---------------------------------------------------------------------------------------------------
 
-compress                      warmup         30000          30000          414.66         829.33         
-compress                      iteration 1    60000          60000          733.52         733.52         
+compress                      warmup         60000          60000          776.20         776.20         
+compress                      iteration 1    180000         180000         2159.56        719.85         
 
 SPECjvm2008 Version: [SPECjvm2008 1.01 (20090519)]
 Copyright (C) 2008-2025 SPEC. All rights reserved

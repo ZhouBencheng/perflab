@@ -1,0 +1,1474 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 35K of event 'cycles:P'
+# Event count (approx.): 2654046999511
+#
+# Children      Self  Command          Shared Object      Symbol                                                                                                                                          
+# ........  ........  ...............  .................  ................................................................................................................................................
+#
+    95.42%     0.00%  BenchmarkThread  libc.so.6          [.] start_thread
+            |
+            ---start_thread
+               java_start(Thread*)
+               JavaThread::thread_main_inner()
+               thread_entry(JavaThread*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+               JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+               call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  libjvm.so          [.] java_start(Thread*)
+            |
+            ---java_start(Thread*)
+               JavaThread::thread_main_inner()
+               thread_entry(JavaThread*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+               JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+               call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  libjvm.so          [.] JavaThread::thread_main_inner()
+            |
+            ---JavaThread::thread_main_inner()
+               thread_entry(JavaThread*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+               JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+               call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  libjvm.so          [.] thread_entry(JavaThread*, Thread*)
+            |
+            ---thread_entry(JavaThread*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+               JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+               call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  libjvm.so          [.] JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+            |
+            ---JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+               JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+               JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+               call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  libjvm.so          [.] JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+            |
+            ---JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+               JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+               call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  libjvm.so          [.] JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+            |
+            ---JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+               call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] call_stub
+            |
+            ---call_stub
+               Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Interpreter
+            |
+            ---Interpreter
+               Interpreter
+               Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.42%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/harness/BenchmarkThread;::runLoop
+            |
+            ---Lspec/harness/BenchmarkThread;::runLoop
+               |          
+                --95.41%--Lspec/benchmarks/compress/Main;::harnessMain
+                          |          
+                          |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                          |          |          
+                          |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          |          |          
+                          |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                          |          |          |          
+                          |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                          |          |          
+                          |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                          |--26.08%--0x7016a959c574
+                          |          |          
+                          |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |                     |          
+                          |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+                          |          
+                           --11.42%--0x7016a959c5f0
+                                     Lspec/benchmarks/compress/Compress;::performAction
+                                     Lspec/benchmarks/compress/Decompressor;::decompress
+
+    95.41%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/benchmarks/compress/Main;::harnessMain
+            |
+            ---Lspec/benchmarks/compress/Main;::harnessMain
+               |          
+               |--57.72%--Lspec/benchmarks/compress/Harness;::runCompress
+               |          |          
+               |          |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+               |          |          |          
+               |          |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+               |          |          |          
+               |          |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+               |          |          
+               |           --0.61%--Lspec/benchmarks/compress/Compressor;::output
+               |          
+               |--26.08%--0x7016a959c574
+               |          |          
+               |           --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+               |                     |          
+               |                      --4.51%--Lspec/benchmarks/compress/Compressor;::output
+               |          
+                --11.42%--0x7016a959c5f0
+                          Lspec/benchmarks/compress/Compress;::performAction
+                          Lspec/benchmarks/compress/Decompressor;::decompress
+
+    94.26%    52.63%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/benchmarks/compress/Compress;::performAction
+            |          
+            |--52.63%--start_thread
+            |          java_start(Thread*)
+            |          JavaThread::thread_main_inner()
+            |          thread_entry(JavaThread*, Thread*)
+            |          JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+            |          JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+            |          JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+            |          call_stub
+            |          Interpreter
+            |          Interpreter
+            |          Lspec/harness/BenchmarkThread;::runLoop
+            |          Lspec/benchmarks/compress/Main;::harnessMain
+            |          |          
+            |          |--31.65%--Lspec/benchmarks/compress/Harness;::runCompress
+            |          |          |          
+            |          |           --31.48%--Lspec/benchmarks/compress/Compress;::performAction
+            |          |          
+            |           --20.98%--0x7016a959c574
+            |                     |          
+            |                      --20.88%--Lspec/benchmarks/compress/Compress;::performAction
+            |          
+             --41.63%--Lspec/benchmarks/compress/Compress;::performAction
+                       |          
+                       |--29.29%--Lspec/benchmarks/compress/Decompressor;::decompress
+                       |          
+                        --11.38%--Lspec/benchmarks/compress/Compressor;::output
+
+    57.72%     0.01%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/benchmarks/compress/Harness;::runCompress
+            |          
+             --57.71%--Lspec/benchmarks/compress/Harness;::runCompress
+                       |          
+                       |--56.83%--Lspec/benchmarks/compress/Compress;::performAction
+                       |          |          
+                       |          |--17.87%--Lspec/benchmarks/compress/Decompressor;::decompress
+                       |          |          
+                       |           --6.87%--Lspec/benchmarks/compress/Compressor;::output
+                       |          
+                        --0.61%--Lspec/benchmarks/compress/Compressor;::output
+
+    29.29%    29.01%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/benchmarks/compress/Decompressor;::decompress
+            |          
+             --29.01%--start_thread
+                       java_start(Thread*)
+                       JavaThread::thread_main_inner()
+                       thread_entry(JavaThread*, Thread*)
+                       JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+                       JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+                       JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+                       call_stub
+                       Interpreter
+                       Interpreter
+                       Lspec/harness/BenchmarkThread;::runLoop
+                       Lspec/benchmarks/compress/Main;::harnessMain
+                       |          
+                       |--17.72%--Lspec/benchmarks/compress/Harness;::runCompress
+                       |          Lspec/benchmarks/compress/Compress;::performAction
+                       |          Lspec/benchmarks/compress/Decompressor;::decompress
+                       |          
+                        --11.29%--0x7016a959c5f0
+                                  Lspec/benchmarks/compress/Compress;::performAction
+                                  Lspec/benchmarks/compress/Decompressor;::decompress
+
+    26.08%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] 0x00007016a959c574
+            |
+            ---0x7016a959c574
+               |          
+                --25.73%--Lspec/benchmarks/compress/Compress;::performAction
+                          |          
+                           --4.51%--Lspec/benchmarks/compress/Compressor;::output
+
+    12.56%    12.18%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/benchmarks/compress/Compressor;::output
+            |          
+             --12.18%--start_thread
+                       java_start(Thread*)
+                       JavaThread::thread_main_inner()
+                       thread_entry(JavaThread*, Thread*)
+                       JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+                       JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+                       JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+                       call_stub
+                       Interpreter
+                       Interpreter
+                       Lspec/harness/BenchmarkThread;::runLoop
+                       Lspec/benchmarks/compress/Main;::harnessMain
+                       |          
+                       |--7.37%--Lspec/benchmarks/compress/Harness;::runCompress
+                       |          |          
+                       |           --6.95%--Lspec/benchmarks/compress/Compress;::performAction
+                       |                     |          
+                       |                      --6.82%--Lspec/benchmarks/compress/Compressor;::output
+                       |          
+                        --4.81%--0x7016a959c574
+                                  |          
+                                   --4.56%--Lspec/benchmarks/compress/Compress;::performAction
+                                             |          
+                                              --4.47%--Lspec/benchmarks/compress/Compressor;::output
+
+    11.42%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] 0x00007016a959c5f0
+            |
+            ---0x7016a959c5f0
+               Lspec/benchmarks/compress/Compress;::performAction
+               Lspec/benchmarks/compress/Decompressor;::decompress
+
+     4.07%     0.00%  GC task thread#  libc.so.6          [.] start_thread
+            |
+            ---start_thread
+               java_start(Thread*)
+               |          
+                --4.06%--GCTaskThread::run()
+                          |          
+                          |--2.82%--StealTask::do_it(GCTaskManager*, unsigned int)
+                          |          |          
+                          |          |--1.39%--PSPromotionManager::drain_stacks_depth(bool)
+                          |          |          |          
+                          |          |           --1.30%--__memmove_sse2_unaligned_erms
+                          |          |          
+                          |           --1.24%--SpinPause
+                          |          
+                          |--0.60%--ThreadRootsTask::do_it(GCTaskManager*, unsigned int)
+                          |          |          
+                          |           --0.59%--JavaThread::oops_do(OopClosure*, CLDClosure*, CodeBlobClosure*)
+                          |          
+                           --0.51%--OldToYoungRootsTask::do_it(GCTaskManager*, unsigned int)
+
+     4.07%     0.00%  GC task thread#  libjvm.so          [.] java_start(Thread*)
+            |
+            ---java_start(Thread*)
+               |          
+                --4.06%--GCTaskThread::run()
+                          |          
+                          |--2.82%--StealTask::do_it(GCTaskManager*, unsigned int)
+                          |          |          
+                          |          |--1.39%--PSPromotionManager::drain_stacks_depth(bool)
+                          |          |          |          
+                          |          |           --1.30%--__memmove_sse2_unaligned_erms
+                          |          |          
+                          |           --1.24%--SpinPause
+                          |          
+                          |--0.60%--ThreadRootsTask::do_it(GCTaskManager*, unsigned int)
+                          |          |          
+                          |           --0.59%--JavaThread::oops_do(OopClosure*, CLDClosure*, CodeBlobClosure*)
+                          |          
+                           --0.51%--OldToYoungRootsTask::do_it(GCTaskManager*, unsigned int)
+
+     4.06%     0.00%  GC task thread#  libjvm.so          [.] GCTaskThread::run()
+            |          
+             --4.06%--GCTaskThread::run()
+                       |          
+                       |--2.82%--StealTask::do_it(GCTaskManager*, unsigned int)
+                       |          |          
+                       |          |--1.39%--PSPromotionManager::drain_stacks_depth(bool)
+                       |          |          |          
+                       |          |           --1.30%--__memmove_sse2_unaligned_erms
+                       |          |          
+                       |           --1.24%--SpinPause
+                       |          
+                       |--0.60%--ThreadRootsTask::do_it(GCTaskManager*, unsigned int)
+                       |          |          
+                       |           --0.59%--JavaThread::oops_do(OopClosure*, CLDClosure*, CodeBlobClosure*)
+                       |          
+                        --0.51%--OldToYoungRootsTask::do_it(GCTaskManager*, unsigned int)
+
+     2.82%     0.00%  GC task thread#  libjvm.so          [.] StealTask::do_it(GCTaskManager*, unsigned int)
+            |
+            ---StealTask::do_it(GCTaskManager*, unsigned int)
+               |          
+               |--1.39%--PSPromotionManager::drain_stacks_depth(bool)
+               |          |          
+               |           --1.30%--__memmove_sse2_unaligned_erms
+               |          
+                --1.24%--SpinPause
+
+     1.75%     1.66%  GC task thread#  libc.so.6          [.] __memmove_sse2_unaligned_erms
+            |          
+             --1.66%--start_thread
+                       java_start(Thread*)
+                       GCTaskThread::run()
+                       |          
+                        --1.31%--StealTask::do_it(GCTaskManager*, unsigned int)
+                                  |          
+                                   --1.30%--PSPromotionManager::drain_stacks_depth(bool)
+                                             __memmove_sse2_unaligned_erms
+
+     1.39%     0.00%  GC task thread#  libjvm.so          [.] PSPromotionManager::drain_stacks_depth(bool)
+            |
+            ---PSPromotionManager::drain_stacks_depth(bool)
+               |          
+                --1.30%--__memmove_sse2_unaligned_erms
+
+     1.26%     1.23%  GC task thread#  libjvm.so          [.] SpinPause
+            |          
+             --1.23%--start_thread
+                       java_start(Thread*)
+                       GCTaskThread::run()
+                       StealTask::do_it(GCTaskManager*, unsigned int)
+                       |          
+                        --1.21%--SpinPause
+
+     0.60%     0.00%  GC task thread#  libjvm.so          [.] ThreadRootsTask::do_it(GCTaskManager*, unsigned int)
+            |
+            ---ThreadRootsTask::do_it(GCTaskManager*, unsigned int)
+               |          
+                --0.59%--JavaThread::oops_do(OopClosure*, CLDClosure*, CodeBlobClosure*)
+
+     0.60%     0.00%  GC task thread#  libjvm.so          [.] JavaThread::oops_do(OopClosure*, CLDClosure*, CodeBlobClosure*)
+            |
+            ---JavaThread::oops_do(OopClosure*, CLDClosure*, CodeBlobClosure*)
+
+     0.60%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+            |          
+             --0.59%--asm_sysvec_apic_timer_interrupt
+                       |          
+                        --0.57%--sysvec_apic_timer_interrupt
+                                  |          
+                                   --0.51%--__sysvec_apic_timer_interrupt
+                                             |          
+                                              --0.51%--hrtimer_interrupt
+
+     0.57%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+            |          
+             --0.57%--sysvec_apic_timer_interrupt
+                       |          
+                        --0.51%--__sysvec_apic_timer_interrupt
+                                  |          
+                                   --0.51%--hrtimer_interrupt
+
+     0.51%     0.00%  GC task thread#  libjvm.so          [.] OldToYoungRootsTask::do_it(GCTaskManager*, unsigned int)
+            |
+            ---OldToYoungRootsTask::do_it(GCTaskManager*, unsigned int)
+
+     0.51%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+            |          
+             --0.51%--__sysvec_apic_timer_interrupt
+                       hrtimer_interrupt
+
+     0.51%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.48%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.47%     0.00%  GC task thread#  libjvm.so          [.] frame::oops_do_internal(OopClosure*, CLDClosure*, CodeBlobClosure*, RegisterMap*, bool)
+     0.46%     0.03%  GC task thread#  libjvm.so          [.] PSRootsClosure<false>::do_oop(oopDesc**)
+     0.46%     0.45%  BenchmarkThread  [JIT] tid 129796   [.] updateBytesCRC32
+     0.43%     0.00%  GC task thread#  libjvm.so          [.] OopMapSet::oops_do(frame const*, RegisterMap const*, OopClosure*)
+     0.41%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] tick_nohz_highres_handler
+     0.38%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] update_process_times
+     0.38%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] tick_sched_handle
+     0.35%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] scheduler_tick
+     0.32%     0.27%  GC task thread#  libjvm.so          [.] CardTableExtension::scavenge_contents_parallel(ObjectStartArray*, MutableSpace*, HeapWord*, PSPromotionManager*, unsigned int, unsigned int)
+     0.31%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] asm_sysvec_thermal
+     0.31%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sysvec_thermal
+     0.31%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __sysvec_thermal
+     0.31%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] intel_thermal_interrupt
+     0.28%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] perf_event_task_tick
+     0.28%     0.14%  BenchmarkThread  [kernel.kallsyms]  [k] perf_adjust_freq_unthr_context
+     0.26%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/util/zip/CRC32;::update
+     0.23%     0.00%  VM Thread        libc.so.6          [.] start_thread
+     0.23%     0.00%  VM Thread        libjvm.so          [.] java_start(Thread*)
+     0.23%     0.00%  VM Thread        libjvm.so          [.] VMThread::run()
+     0.23%     0.00%  VM Thread        libjvm.so          [.] VMThread::loop()
+     0.21%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] pkg_thermal_notify
+     0.20%     0.20%  BenchmarkThread  [kernel.kallsyms]  [k] native_queued_spin_lock_slowpath
+     0.20%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] __raw_spin_lock_irqsave
+     0.20%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] _raw_spin_lock_irqsave
+     0.19%     0.19%  GC task thread#  libjvm.so          [.] ObjectStartArray::object_starts_in_range(HeapWord*, HeapWord*) const
+     0.17%     0.16%  BenchmarkThread  [kernel.kallsyms]  [k] native_write_msr
+     0.15%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] x86_pmu_enable
+     0.15%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] intel_pmu_enable_all
+     0.14%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] 0x00007016a959d82d
+     0.14%     0.09%  VM Thread        libjvm.so          [.] SafepointSynchronize::begin()
+     0.13%     0.06%  GC task thread#  libjvm.so          [.] oopDesc* PSPromotionManager::copy_to_survivor_space<false>(oopDesc*)
+     0.10%     0.10%  BenchmarkThread  [JIT] tid 129796   [.] arrayof_jint_fill
+     0.10%     0.00%  C2 CompilerThre  libc.so.6          [.] start_thread
+     0.10%     0.00%  C2 CompilerThre  libjvm.so          [.] java_start(Thread*)
+     0.10%     0.00%  C2 CompilerThre  libjvm.so          [.] JavaThread::thread_main_inner()
+     0.10%     0.00%  C2 CompilerThre  libjvm.so          [.] CompileBroker::compiler_thread_loop()
+     0.10%     0.00%  C2 CompilerThre  libjvm.so          [.] CompileBroker::invoke_compiler_on_method(CompileTask*)
+     0.10%     0.00%  C2 CompilerThre  libjvm.so          [.] C2Compiler::compile_method(ciEnv*, ciMethod*, int)
+     0.10%     0.00%  C2 CompilerThre  libjvm.so          [.] Compile::Compile(ciEnv*, C2Compiler*, ciMethod*, int, bool, bool, bool, bool)
+     0.09%     0.00%  GC task thread#  libjvm.so          [.] ScavengeRootsTask::do_it(GCTaskManager*, unsigned int)
+     0.09%     0.00%  VM Thread        libjvm.so          [.] VMThread::evaluate_operation(VM_Operation*) [clone .constprop.0]
+     0.09%     0.00%  VM Thread        libjvm.so          [.] VM_Operation::evaluate()
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] asm_exc_page_fault
+     0.09%     0.00%  VM Thread        [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.09%     0.00%  VM Thread        [kernel.kallsyms]  [k] do_syscall_64
+     0.09%     0.00%  VM Thread        [kernel.kallsyms]  [k] x64_sys_call
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.09%     0.09%  GC task thread#  [kernel.kallsyms]  [k] perf_adjust_freq_unthr_context
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] tick_nohz_highres_handler
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] tick_sched_handle
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] update_process_times
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] scheduler_tick
+     0.09%     0.00%  GC task thread#  [kernel.kallsyms]  [k] perf_event_task_tick
+     0.08%     0.08%  GC task thread#  libjvm.so          [.] JNIHandleBlock::oops_do(OopClosure*)
+     0.08%     0.01%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/benchmarks/compress/Compressor;::clBlock
+     0.08%     0.00%  VM Periodic Tas  libc.so.6          [.] start_thread
+     0.08%     0.00%  VM Periodic Tas  libjvm.so          [.] java_start(Thread*)
+     0.08%     0.08%  GC task thread#  libjvm.so          [.] InstanceKlass::oop_push_contents(PSPromotionManager*, oopDesc*)
+     0.08%     0.00%  GC task thread#  libjvm.so          [.] ClassLoaderDataGraph::oops_do(OopClosure*, KlassClosure*, bool)
+     0.08%     0.06%  GC task thread#  libjvm.so          [.] ParallelTaskTerminator::offer_termination(TerminatorTerminator*)
+     0.08%     0.08%  BenchmarkThread  [kernel.kallsyms]  [k] native_read_msr
+     0.07%     0.00%  VM Periodic Tas  libjvm.so          [.] WatcherThread::run()
+     0.07%     0.00%  VM Periodic Tas  libjvm.so          [.] WatcherThread::sleep() const
+     0.07%     0.00%  VM Thread        libjvm.so          [.] VM_ParallelGCFailedAllocation::doit()
+     0.07%     0.00%  VM Thread        libjvm.so          [.] ParallelScavengeHeap::failed_mem_allocate(unsigned long)
+     0.07%     0.00%  VM Thread        libjvm.so          [.] PSScavenge::invoke()
+     0.07%     0.00%  VM Thread        libjvm.so          [.] PSScavenge::invoke_no_policy()
+     0.07%     0.00%  VM Thread        libjvm.so          [.] PSYoungGen::resize(unsigned long, unsigned long)
+     0.07%     0.00%  VM Thread        libjvm.so          [.] PSVirtualSpace::shrink_by(unsigned long)
+     0.07%     0.00%  VM Thread        libc.so.6          [.] __mmap
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] __x64_sys_mmap
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] ksys_mmap_pgoff
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] vm_mmap_pgoff
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] do_mmap
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] mmap_region
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] __mmap_region
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] do_vmi_munmap
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] do_vmi_align_munmap
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] unmap_region
+     0.07%     0.07%  VM Thread        [kernel.kallsyms]  [k] lru_gen_del_folio.constprop.0
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] tlb_finish_mmu
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] tlb_batch_pages_flush
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] free_pages_and_swap_cache
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] release_pages
+     0.07%     0.00%  VM Thread        [kernel.kallsyms]  [k] __mod_lruvec_state
+     0.06%     0.06%  VM Periodic Tas  libjvm.so          [.] Monitor::IWait(Thread*, long)
+     0.05%     0.05%  GC task thread#  libjvm.so          [.] GenericTaskQueueSet<OverflowTaskQueue<StarTask, (MemoryType)1, 131072u>, (MemoryType)1>::steal_best_of_2(unsigned int, int*, StarTask&)
+     0.05%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] 0x00007016a959cfde
+     0.05%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] irq_exit_rcu
+     0.05%     0.00%  C2 CompilerThre  libjvm.so          [.] Compile::Code_Gen()
+     0.05%     0.05%  GC task thread#  libjvm.so          [.] PSScavengeKlassClosure::do_klass(Klass*)
+     0.05%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] irqentry_exit
+     0.05%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __irq_exit_rcu
+     0.05%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] handle_softirqs
+     0.05%     0.00%  GC task thread#  [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.05%     0.00%  GC task thread#  [kernel.kallsyms]  [k] do_syscall_64
+     0.05%     0.00%  GC task thread#  [kernel.kallsyms]  [k] x64_sys_call
+     0.05%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __x64_sys_futex
+     0.05%     0.00%  GC task thread#  [kernel.kallsyms]  [k] do_futex
+     0.05%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] irqentry_exit_to_user_mode
+     0.05%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] asm_common_interrupt
+     0.05%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] common_interrupt
+     0.04%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] task_tick_fair
+     0.04%     0.04%  GC task thread#  libjvm.so          [.] GenericTaskQueue<StarTask, (MemoryType)1, 131072u>::pop_global(StarTask volatile&)
+     0.04%     0.00%  GC task thread#  libc.so.6          [.] __GI___futex_abstimed_wait_cancelable64
+     0.04%     0.03%  GC task thread#  [kernel.kallsyms]  [k] futex_wait
+     0.04%     0.00%  GC task thread#  [kernel.kallsyms]  [k] exc_page_fault
+     0.04%     0.00%  GC task thread#  [kernel.kallsyms]  [k] do_user_addr_fault
+     0.04%     0.00%  GC task thread#  [kernel.kallsyms]  [k] handle_mm_fault
+     0.04%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __handle_mm_fault
+     0.04%     0.00%  GC task thread#  [kernel.kallsyms]  [k] handle_pte_fault
+     0.04%     0.00%  GC task thread#  [kernel.kallsyms]  [k] do_anonymous_page
+     0.04%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] schedule
+     0.04%     0.04%  GC task thread#  [kernel.kallsyms]  [k] blk_cgroup_congested
+     0.04%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __folio_throttle_swaprate
+     0.04%     0.00%  C2 CompilerThre  libjvm.so          [.] Compile::Optimize()
+     0.04%     0.04%  C2 CompilerThre  libjvm.so          [.] ConnectionGraph::compute_escape()
+     0.04%     0.00%  C2 CompilerThre  libjvm.so          [.] ConnectionGraph::do_analysis(Compile*, PhaseIterGVN*)
+     0.03%     0.03%  C2 CompilerThre  libjvm.so          [.] PhaseCFG::build_cfg()
+     0.03%     0.00%  C2 CompilerThre  libjvm.so          [.] PhaseCFG::PhaseCFG(Arena*, RootNode*, Matcher&)
+     0.03%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __schedule
+     0.03%     0.03%  GC task thread#  libjvm.so          [.] frame::oopmapreg_to_location(VMRegImpl*, RegisterMap const*) const
+     0.03%     0.03%  BenchmarkThread  [kernel.kallsyms]  [k] _raw_spin_lock
+     0.03%     0.03%  VM Thread        libjvm.so          [.] ObjectSynchronizer::deflate_idle_monitors()
+     0.03%     0.00%  VM Thread        libjvm.so          [.] SafepointSynchronize::do_cleanup_tasks()
+     0.03%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002f5
+     0.03%     0.03%  BenchmarkThread  [kernel.kallsyms]  [k] native_irq_return_iret
+     0.03%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] tick_sched_do_timer
+     0.03%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] try_to_wake_up
+     0.03%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] notify_hwp_interrupt
+     0.03%     0.00%  GC task thread#  libjvm.so          [.] ClassLoaderData::oops_do(OopClosure*, KlassClosure*, bool)
+     0.02%     0.02%  BenchmarkThread  [kernel.kallsyms]  [k] native_read_msr_safe
+     0.02%     0.02%  VM Thread        libjvm.so          [.] JvmtiGCMarker::JvmtiGCMarker()
+     0.02%     0.00%  Program Runner   libc.so.6          [.] start_thread
+     0.02%     0.00%  Program Runner   libjvm.so          [.] java_start(Thread*)
+     0.02%     0.00%  Program Runner   libjvm.so          [.] JavaThread::thread_main_inner()
+     0.02%     0.00%  Program Runner   libjvm.so          [.] thread_entry(JavaThread*, Thread*)
+     0.02%     0.00%  Program Runner   libjvm.so          [.] JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)
+     0.02%     0.00%  Program Runner   libjvm.so          [.] JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)
+     0.02%     0.00%  Program Runner   libjvm.so          [.] JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] call_stub
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] Interpreter
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] Ljava/io/PrintStream;::write
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] Lsun/nio/cs/StreamEncoder;::implFlushBuffer
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] Lsun/nio/cs/StreamEncoder;::writeBytes
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] Ljava/io/PrintStream;::write
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] 0x00007016a92d1684
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] 0x00007016a92b7d46
+     0.02%     0.00%  Program Runner   libjava.so         [.] Java_java_io_FileOutputStream_writeBytes
+     0.02%     0.02%  Program Runner   [kernel.kallsyms]  [k] __memcg_slab_post_alloc_hook
+     0.02%     0.00%  Program Runner   [JIT] tid 129796   [.] Ljava/io/PrintStream;::print
+     0.02%     0.00%  Program Runner   libjava.so         [.] writeBytes
+     0.02%     0.00%  Program Runner   libc.so.6          [.] __GI___libc_write
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] do_syscall_64
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] x64_sys_call
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] __x64_sys_write
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] ksys_write
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] vfs_write
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] __fsnotify_parent
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] fsnotify
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] send_to_group
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] fsnotify_handle_inode_event.isra.0
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] inotify_handle_inode_event
+     0.02%     0.00%  Program Runner   [kernel.kallsyms]  [k] __kmalloc
+     0.02%     0.02%  GC task thread#  libjvm.so          [.] ConstantPool::impl_signature_ref_at(int, bool)
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] perf_mux_hrtimer_handler
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __common_interrupt
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] handle_edge_irq
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] handle_irq_event
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __handle_irq_event_percpu
+     0.02%     0.02%  BenchmarkThread  [kernel.kallsyms]  [k] xhci_ring_ep_doorbell
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] tasklet_hi_action
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] tasklet_action_common.constprop.0
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] usb_giveback_urb_bh
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __usb_hcd_giveback_urb
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] usb_submit_urb
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] usb_hcd_submit_urb
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] xhci_urb_enqueue
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] xhci_queue_intr_tx
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] xhci_queue_bulk_tx
+     0.02%     0.02%  GC task thread#  libjvm.so          [.] nmethod::oops_do(OopClosure*, bool)
+     0.02%     0.00%  GC task thread#  libjvm.so          [.] MarkingCodeBlobClosure::do_code_blob(CodeBlob*)
+     0.02%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] _raw_spin_lock_irq
+     0.02%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] update_load_avg
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] hid_irq_in
+     0.02%     0.00%  C2 CompilerThre  libjvm.so          [.] PhaseChaitin::Register_Allocate()
+     0.02%     0.02%  C2 CompilerThre  libjvm.so          [.] MachHaltNode::jvms() const
+     0.02%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] _new_array_Java
+     0.02%     0.00%  BenchmarkThread  libjvm.so          [.] OptoRuntime::new_array_C(Klass*, int, JavaThread*)
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] asm_sysvec_reschedule_ipi
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] wake_up_process
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] tick_program_event
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] clockevents_program_event
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] enqueue_task
+     0.02%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] ttwu_do_activate
+     0.02%     0.02%  GC task thread#  libjvm.so          [.] JvmtiVMObjectAllocEventCollector::oops_do_for_all_threads(OopClosure*)
+     0.02%     0.00%  C2 CompilerThre  libjvm.so          [.] ParseGenerator::generate(JVMState*)
+     0.02%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::Parse(JVMState*, ciMethod*, float)
+     0.02%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::do_all_blocks()
+     0.02%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::do_one_block()
+     0.02%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::do_call()
+     0.02%     0.02%  GC task thread#  libjvm.so          [.] HandleMark::~HandleMark()
+     0.01%     0.01%  VM Thread        libjvm.so          [.] SpinPause
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] perf_rotate_context
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] update_curr
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] gen11_irq_handler
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] sync_regs
+     0.01%     0.00%  VM Thread        libc.so.6          [.] __GI___futex_abstimed_wait_cancelable64
+     0.01%     0.00%  VM Thread        [kernel.kallsyms]  [k] __x64_sys_futex
+     0.01%     0.00%  VM Thread        [kernel.kallsyms]  [k] do_futex
+     0.01%     0.00%  VM Thread        [kernel.kallsyms]  [k] futex_wait
+     0.01%     0.01%  VM Thread        [kernel.kallsyms]  [k] futex_wait_queue
+     0.01%     0.00%  VM Thread        [kernel.kallsyms]  [k] __futex_wait
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_core_si
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_core
+     0.01%     0.00%  VM Thread        [unknown]          [k] 0x0000000000000001
+     0.01%     0.00%  GC task thread#  libjvm.so          [.] CompilerThread::oops_do(OopClosure*, CLDClosure*, CodeBlobClosure*)
+     0.01%     0.00%  VM Periodic Tas  [unknown]          [k] 0000000000000000
+     0.01%     0.00%  VM Periodic Tas  libc.so.6          [.] __GI___futex_abstimed_wait_cancelable64
+     0.01%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.01%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] do_syscall_64
+     0.01%     0.01%  VM Periodic Tas  [kernel.kallsyms]  [k] syscall_exit_to_user_mode
+     0.01%     0.01%  VM Periodic Tas  libjvm.so          [.] Monitor::wait(bool, long, bool)
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] schedule
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __schedule
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __futex_wait
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] futex_wait_queue
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sysvec_reschedule_ipi
+     0.01%     0.01%  GC task thread#  libjvm.so          [.] JvmtiExport::oops_do(OopClosure*)
+     0.01%     0.01%  BenchmarkThread  libc.so.6          [.] __memset_evex_unaligned_erms
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] hrtimer_wakeup
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] run_rebalance_domains
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sched_clock_cpu
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] gen11_display_irq_handler
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] gen8_de_irq_handler
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] drm_crtc_handle_vblank
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] drm_handle_vblank
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] pick_next_task
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] psi_task_switch
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] timerqueue_add
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] enqueue_hrtimer
+     0.01%     0.01%  C2 CompilerThre  libjvm.so          [.] IfNode::Value(PhaseTransform*) const
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::create_entry_map()
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] GraphKit::null_check_common(Node*, BasicType, bool, Node**) [clone .part.0]
+     0.01%     0.01%  VM Periodic Tas  libjvm.so          [.] PeriodicTask::real_time_tick(int)
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] finish_task_switch.isra.0
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sched_clock
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] sched_clock_noinstr
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] account_user_time
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] account_process_tick
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] select_task_rq_fair
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] select_task_rq
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] update_cfs_group
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] lapic_next_deadline
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] run_posix_cpu_timers
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rebalance_domains
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] drm_handle_vblank_events
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] send_vblank_event
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] drm_send_event_timestamp_locked
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] drm_send_event_helper
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] enqueue_task_fair
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __wake_up
+     0.01%     0.00%  GC task thread#  libc.so.6          [.] pthread_cond_signal@@GLIBC_2.3.2
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] futex_wake
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __wake_up_common
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] default_wake_function
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] psi_group_change
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] pick_next_task_fair
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_sched_clock_irq
+     0.01%     0.01%  GC task thread#  libjvm.so          [.] Monitor::unlock()
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] native_sched_clock
+     0.01%     0.01%  GC task thread#  libjvm.so          [.] frame::oops_interpreted_do(OopClosure*, CLDClosure*, RegisterMap const*, bool)
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] wake_up_q
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] try_to_wake_up
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] select_task_rq
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] select_task_rq_fair
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] wake_affine
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] asm_exc_page_fault
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] exc_page_fault
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] arch_do_signal_or_restart
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] get_signal
+     0.01%     0.01%  VM Thread        [kernel.kallsyms]  [k] mas_find
+     0.01%     0.00%  VM Thread        libjvm.so          [.] os::serialize_thread_states()
+     0.01%     0.00%  VM Thread        libc.so.6          [.] __mprotect
+     0.01%     0.00%  VM Thread        [kernel.kallsyms]  [k] __x64_sys_mprotect
+     0.01%     0.00%  VM Thread        [kernel.kallsyms]  [k] do_mprotect_pkey
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __perf_event_task_sched_in
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] perf_ctx_enable
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] do_syscall_64
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] x64_sys_call
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_pending
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] hrtimer_active
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] load_balance
+     0.01%     0.00%  BenchmarkThread  libjvm.so          [.] TypeArrayKlass::allocate_common(int, bool, Thread*)
+     0.01%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/io/ValidityCheckOutputStream;::validityCheck
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] update_curr_se
+     0.01%     0.00%  BenchmarkThread  libjvm.so          [.] CollectedHeap::allocate_from_tlab_slow(KlassHandle, Thread*, unsigned long)
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] task_h_load
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] ep_poll_callback
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] ep_autoremove_wake_function
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] wake_affine
+     0.01%     0.00%  BenchmarkThread  libjvm.so          [.] ThreadSafepointState::handle_polling_page_exception()
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] enqueue_entity
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] arch_scale_freq_tick
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] therm_throt_process
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __update_load_avg_se
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_report_qs_rdp
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] psi_task_change
+     0.01%     0.00%  GC task thread#  [kernel.kallsyms]  [k] finish_task_switch.isra.0
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] task_tick_mm_cid
+     0.01%     0.01%  C2 CompilerThre  libjvm.so          [.] ConstantPool::impl_klass_ref_index_at(int, bool)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] Compile::call_generator(ciMethod*, int, bool, JVMState*, bool, float, ciKlass*, bool, bool)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] InlineTree::ok_to_inline(ciMethod*, JVMState*, ciCallProfile&, WarmCallInfo*, bool&)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciMethod::get_flow_analysis()
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciTypeFlow::do_flow()
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciTypeFlow::flow_types()
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciTypeFlow::df_flow_types(ciTypeFlow::Block*, bool, ciTypeFlow::StateVector*, ciTypeFlow::JsrSet*)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciTypeFlow::flow_block(ciTypeFlow::Block*, ciTypeFlow::StateVector*, ciTypeFlow::JsrSet*)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciTypeFlow::StateVector::apply_one_bytecode(ciBytecodeStream*)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciTypeFlow::StateVector::do_invoke(ciBytecodeStream*, bool)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciBytecodeStream::get_method(bool&, ciSignature**)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciEnv::get_method_by_index(constantPoolHandle, int, Bytecodes::Code, ciInstanceKlass*)
+     0.01%     0.00%  C2 CompilerThre  libjvm.so          [.] ciEnv::get_method_by_index_impl(constantPoolHandle, int, Bytecodes::Code, ciInstanceKlass*)
+     0.01%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_do_batch
+     0.01%     0.01%  GC task thread#  [kernel.kallsyms]  [k] available_idle_cpu
+     0.01%     0.01%  BenchmarkThread  [kernel.kallsyms]  [k] fpregs_assert_state_consistent
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] x86_pmu_enable
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] intel_pmu_enable_all
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] native_write_msr
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __perf_event_task_sched_in
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] perf_ctx_enable
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] OptoRuntime::new_array_nozero_C(Klass*, int, JavaThread*)
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] _new_array_nozero_Java
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __count_memcg_events
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __mem_cgroup_charge
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] mem_cgroup_commit_charge
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001cd
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] x86_pmu_disable
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] prepare_task_switch
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __perf_event_task_sched_out
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] perf_event_context_sched_out
+     0.00%     0.00%  GC task thread#  libjvm.so          [.] Method::bci_from(unsigned char*) const
+     0.00%     0.00%  BenchmarkThread  libc.so.6          [.] __GI___futex_abstimed_wait_cancelable64
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __x64_sys_futex
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] do_futex
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] futex_wait
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __futex_wait
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] futex_wait_queue
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] zap_pte_range
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] unmap_vmas
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] unmap_single_vma
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] unmap_page_range
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] zap_pmd_range.isra.0
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __irqentry_text_start
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __enqueue_entity
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/benchmarks/compress/CompBase;::getMaxCode
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __update_blocked_fair
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] update_blocked_averages
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lsun/nio/cs/StreamDecoder;::forInputStreamReader
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lspec/io/ValidityCheckOutputStream;::validityCheck2
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] vruntime_eligible
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] pick_next_entity
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] x86_pmu_disable
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] asm_sysvec_irq_work
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sysvec_irq_work
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] check_cpu_stall
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] xhci_irq
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] xhci_msi_irq
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __irq_wake_thread
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] perf_exclude_event
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] prepare_task_switch
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] active_retire
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __sysvec_irq_work
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] irq_work_run
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] irq_work_run_list
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] irq_work_single
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] signal_irq_work
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sched_mm_cid_migrate_to
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] activate_task
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] btusb_intr_complete
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] reweight_entity
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] _raw_spin_unlock
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] timerqueue_del
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lsun/nio/cs/StreamEncoder;::flushLeftoverChar
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/io/PrintStream;::close
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/io/BufferedWriter;::close
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/io/OutputStreamWriter;::close
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lsun/nio/cs/StreamEncoder;::close
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lsun/nio/cs/StreamEncoder;::implClose
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] complete_all
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] Method::result_type() const
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] SafepointBlob
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] nohz_balance_exit_idle
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] trigger_load_balance
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] task_work_add
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] timekeeping_adjust.constprop.0
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] tick_do_update_jiffies64
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] update_wall_time
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] timekeeping_advance
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_segcblist_insert_done_cbs
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] ktime_get
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __rseq_handle_notify_resume
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rseq_update_cpu_node_id
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/lang/String;::<init>
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/util/Arrays;::copyOfRange
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] OopMapSet::find_map_at_offset(int) const
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] SafepointBlob
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] frame::sender(RegisterMap*) const
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] frame::sender_for_compiled_frame(RegisterMap*) const
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __bitmap_and
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Lsun/nio/cs/UTF_8$Encoder;::encodeArrayLoop
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] 0x00007016a959ce90
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/io/PrintStream;::write
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/io/BufferedWriter;::flushBuffer
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] HandleMark::~HandleMark()
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] ThreadLocalAllocBuffer::clear_before_allocation()
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] CollectedHeap::fill_with_object(HeapWord*, unsigned long, bool)
+     0.00%     0.00%  BenchmarkThread  libc.so.6          [.] __restore_rt
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __x64_sys_rt_sigreturn
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] set_current_blocked
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] 0x00007016a95a64af
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] 0x00007016a95a64b2
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] gen11_gt_engine_identity
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] gen11_gt_irq_handler
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] gen11_gt_bank_handler
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] intel_pmu_disable_all
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __rb_insert_augmented
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] vmd_irq
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] generic_handle_irq
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] handle_irq_desc
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] handle_untracked_irq
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] nvme_irq
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] nvme_pci_complete_batch
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] blk_mq_end_request_batch
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] bio_endio
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] end_bio_bh_io_sync
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] journal_end_buffer_io_sync
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] unlock_buffer
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] wake_up_bit
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] wake_bit_function
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] decay_load
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] thread_stack_free_rcu
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] vfree
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] vfree_atomic
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] queue_work_on
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __queue_work
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __queue_work.part.0
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] kick_pool
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_report_qs_rnp
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] rcu_gp_kthread_wake
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] swake_up_one_online
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] swake_up_one
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] native_apic_msr_eoi
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] drain_stock
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] radix_tree_node_rcu_free
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] kmem_cache_free
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __memcg_slab_free_hook
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] obj_cgroup_uncharge
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] refill_obj_stock
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] obj_cgroup_uncharge_pages
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] refill_stock
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __refill_stock
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __dequeue_entity
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] set_next_entity
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __flush_smp_call_function_queue
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] asm_sysvec_call_function
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] sysvec_call_function
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __sysvec_call_function
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] generic_smp_call_function_single_interrupt
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __hrtimer_next_event_base
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] hrtimer_update_next_event
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] task_h_load
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] update_cfs_group
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000211
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] dequeue_task
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] dequeue_task_fair
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] native_sched_clock
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] CodeCache::find_blob(void*)
+     0.00%     0.00%  BenchmarkThread  [JIT] tid 129796   [.] Ljava/lang/AbstractStringBuilder;::append
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] nmi_restore
+     0.00%     0.00%  VM Periodic Tas  libjvm.so          [.] os::PlatformEvent::park(long)
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] futex_wake_mark
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] sched_clock
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000129
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] sched_clock_noinstr
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] update_rq_clock
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] sched_clock_cpu
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000119
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] pv_native_write_cr2
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] nmi_handle
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] pv_native_write_cr2
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] nmi_restore
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] syscall_exit_to_user_mode
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] exc_nmi
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000136
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __get_user_8
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __rseq_handle_notify_resume
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] rseq_ip_fixup
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] exc_nmi
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] end_repeat_nmi
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002c1
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] entry_SYSRETQ_unsafe_stack
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] end_repeat_nmi
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] default_do_nmi
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] native_write_msr
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] x86_pmu_enable
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] intel_pmu_enable_all
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] nmi_cpu_backtrace
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] schedule
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] __schedule
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] finish_task_switch.isra.0
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] __perf_event_task_sched_in
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] perf_ctx_enable
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] perf_mux_hrtimer_handler
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] perf_rotate_context
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] default_do_nmi
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] native_write_msr
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] x86_pmu_enable
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] intel_pmu_enable_all
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] ct_nmi_exit
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000139
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] irqentry_nmi_exit
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] perf_event_nmi_handler
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] nmi_cpu_backtrace
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] native_write_msr
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] x64_sys_call
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] __x64_sys_futex
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] do_futex
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] futex_wait
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] __futex_wait
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] futex_wait_queue
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] schedule
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] __schedule
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] finish_task_switch.isra.0
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] x86_pmu_enable
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] intel_pmu_enable_all
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001ea
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] nmi_handle
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000121
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] __perf_event_task_sched_in
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] perf_ctx_enable
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000001a
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] perf_mux_hrtimer_handler
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] perf_rotate_context
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] native_sched_clock
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] irqentry_nmi_exit
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] irqentry_exit
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] irqentry_exit_to_user_mode
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000006
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] nmi_cpu_backtrace_handler
+     0.00%     0.00%  C2 CompilerThre  libc.so.6          [.] __GI___futex_abstimed_wait_cancelable64
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] do_syscall_64
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] x64_sys_call
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] __x64_sys_futex
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] do_futex
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] futex_wait
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] __futex_wait
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] futex_wait_queue
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] schedule
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] __schedule
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] finish_task_switch.isra.0
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] __perf_event_task_sched_in
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] perf_ctx_enable
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000209
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000052
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000081
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000001e
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000075
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000008a
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] nmi_restore
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000016e
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000016
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000082
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000a1
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000011d
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000012
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] ct_nmi_exit
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000021
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000265
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] nmi_cpu_backtrace_handler
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000a5
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001f9
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000b5
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000c2
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __rcu_read_unlock
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000020d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000181
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000089
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000069
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] asm_sysvec_reschedule_ipi
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] sysvec_reschedule_ipi
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000132
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000013d
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] pv_native_write_cr2
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000111
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000135
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001fd
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001f2
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000099
+     0.00%     0.00%  VM Thread        [unknown]          [k] 0x0000000000000005
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000014a
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] __intel_pmu_enable_all.constprop.0
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000001d
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __intel_pmu_enable_all.constprop.0
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001c6
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000159
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __intel_pmu_enable_all.constprop.0
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000079
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000055
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000a2
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000016d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000028d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000022e
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000019
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001d2
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001ed
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000141
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000010e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001d1
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001b1
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000000d
+     0.00%     0.00%  VM Thread        [unknown]          [k] 0x0000000000000006
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] perf_sample_event_took
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000006e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000256
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000179
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000ba
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000006a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000013a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000205
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000171
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001c1
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] nmi_handle
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000012e
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] nmi_cpu_backtrace
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __rcu_read_unlock
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000031e
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000aa
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000019d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001c5
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000091
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000005
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000225
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000023a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000182
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001dd
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000276
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000072
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000014d
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000b2
+     0.00%     0.00%  C2 CompilerThre  [unknown]          [k] 0000000000000000
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000186
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001da
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] do_user_addr_fault
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] handle_mm_fault
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] __handle_mm_fault
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] handle_pte_fault
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] do_swap_page
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] migration_entry_wait
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] migration_entry_wait_on_locked
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] io_schedule
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000012a
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] perf_event_nmi_handler
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000015
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001ae
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000022d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000242
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000011
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000272
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000095
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000045
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000017a
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] asm_common_interrupt
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] common_interrupt
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000212
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000b1
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000032e
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000096
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Compile::remove_speculative_types(PhaseIterGVN&) [clone .part.0]
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] PhaseIterGVN::optimize()
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] PhaseIterGVN::transform_old(Node*) [clone .constprop.0]
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] IfNode::Ideal(PhaseGVN*, bool)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] IfNode::dominated_by(Node*, PhaseIterGVN*)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] PhaseIterGVN::remove_globally_dead_node(Node*)
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] end_repeat_nmi
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000027a
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000a9
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Matcher::match()
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Matcher::xform(Node*, int)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Matcher::match_tree(Node const*)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Matcher::Label_Root(Node const*, State*, Node*, Node const*)
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] asm_exc_page_fault
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] exc_page_fault
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] do_user_addr_fault
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] handle_mm_fault
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] __handle_mm_fault
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000176
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001de
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000161
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] native_sched_clock
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001f6
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000015a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000196
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000c9
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000003a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000235
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001e9
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000142
+     0.00%     0.00%  GC task thread#  libc.so.6          [.] __sched_yield
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] __x64_sys_sched_yield
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] do_sched_yield
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000bd
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000032a
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000042
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000192
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000026a
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000008d
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000004d
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000000a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000336
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000016a
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] native_sched_clock
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000086
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000071
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002ce
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000056
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] default_do_nmi
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000a6
+     0.00%     0.00%  C2 CompilerThre  [unknown]          [k] 0x0000000000000015
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000041
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] native_write_msr
+     0.00%     0.00%  Program Runner   [JIT] tid 129796   [.] 0x00007016a92cf744
+     0.00%     0.00%  Program Runner   [JIT] tid 129796   [.] 0x00007016a92cdedc
+     0.00%     0.00%  Program Runner   libjvm.so          [.] jni_ExceptionOccurred
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] perf_mux_hrtimer_handler
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] perf_rotate_context
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] x86_pmu_enable
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] intel_pmu_enable_all
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002c6
+     0.00%     0.00%  Program Runner   [kernel.kallsyms]  [k] pv_native_write_cr2
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000029e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000202
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000046
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000232
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000061
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000062
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002ba
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001b9
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000251
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002d2
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000012d
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000009e
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000008e
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000005d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000261
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000010d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000013e
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] intel_pmu_handle_irq
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000165
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000231
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000000fa
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000003e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000030a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000116
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000007a
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002b2
+     0.00%     0.00%  VM Thread        libc.so.6          [.] __GI___lll_lock_wake
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] syscall_exit_to_user_mode
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001c9
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000092
+     0.00%     0.00%  GC task thread#  libc.so.6          [.] __GI___lll_lock_wake
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] PhaseChaitin::gather_lrg_masks(bool)
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] nmi_cpu_backtrace
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000275
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001aa
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000131
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001ba
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000002e
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] perf_event_nmi_handler
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000017d
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000007e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002ed
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000241
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000252
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000006d
+     0.00%     0.00%  VM Thread        [unknown]          [k] 0x00000000000000cd
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000085
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000002d
+     0.00%     0.00%  VM Thread        [unknown]          [k] 0x00000000000000a9
+     0.00%     0.00%  VM Thread        [unknown]          [k] 0x000000000000006d
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000b9
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000066
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000166
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000024a
+     0.00%     0.00%  C2 CompilerThre  [kernel.kallsyms]  [k] perf_event_nmi_handler
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000296
+     0.00%     0.00%  BenchmarkThread  libjvm.so          [.] ParallelScavengeHeap::mem_allocate(unsigned long, bool*)
+     0.00%     0.00%  BenchmarkThread  libc.so.6          [.] __GI___lll_lock_wake
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] syscall_exit_to_user_mode
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002d1
+     0.00%     0.00%  C2 CompilerThre  [unknown]          [k] 0x0000000000000001
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000279
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001e2
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x000000000000003d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000027e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002be
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000106
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] native_apic_msr_write
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000021d
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::do_method_entry()
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] GraphKit::record_profiled_parameters_for_speculation()
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000015e
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] perf_mux_hrtimer_handler
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] perf_rotate_context
+     0.00%     0.00%  BenchmarkThread  [kernel.kallsyms]  [k] perf_sample_event_took
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000ae
+     0.00%     0.00%  C2 CompilerThre  [unknown]          [k] 0x0000000000000009
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000149
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000266
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000ad
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002fe
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000169
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001d9
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000152
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000206
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::do_field_access(bool, bool)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] Parse::do_get_xxx(Node*, ciField*, bool)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] GraphKit::make_load(Node*, Node*, Type const*, BasicType, int, MemNode::MemOrd, LoadNode::ControlDependency, bool, bool, bool)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] LoadNode::make(PhaseGVN&, Node*, Node*, Node*, TypePtr const*, Type const*, BasicType, MemNode::MemOrd, LoadNode::ControlDependency)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] TypeInstPtr::add_offset(long) const
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] TypeInstPtr::make(TypePtr::PTR, ciKlass*, bool, ciObject*, int, int, TypeOopPtr const*, int)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] ciInstanceKlass::get_field_by_offset(int, bool)
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] InstanceKlass::find_field_from_offset(int, bool, fieldDescriptor*) const
+     0.00%     0.00%  C2 CompilerThre  libjvm.so          [.] constantPoolHandle::remove()
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] perf_event_nmi_handler
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x0000000000000029
+     0.00%     0.00%  VM Thread        [unknown]          [k] 0x0000000000000002
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000014e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000001ca
+     0.00%     0.00%  VM Thread        [unknown]          [k] 0x000000000000002e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000034e
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000155
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x00000000000002b9
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000151
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] intel_pmu_handle_irq
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000017e
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] perf_mux_hrtimer_handler
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] perf_rotate_context
+     0.00%     0.00%  VM Thread        [kernel.kallsyms]  [k] sched_clock
+     0.00%     0.00%  BenchmarkThread  [unknown]          [k] 0x00000000000000de
+     0.00%     0.00%  VM Periodic Tas  [kernel.kallsyms]  [k] intel_bts_enable_local
+     0.00%     0.00%  GC task thread#  [kernel.kallsyms]  [k] intel_bts_enable_local
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x000000000000015d
+     0.00%     0.00%  GC task thread#  [unknown]          [k] 0x0000000000000126
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

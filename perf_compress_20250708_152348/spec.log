@@ -1,0 +1,93 @@
+    JVM PID = 129796
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Benchmarks:        compress
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+  Kit signature and checksum is validated.
+  This can take several minutes.
+  Use argument '-ikv' to skip this.
+  ....................................passed.
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Tue Jul 08 15:24:02 CST 2025
+Iteration 1 (1 operation) ends:   Tue Jul 08 15:24:02 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      60s
+  Iterations:  1
+  Run length:  180s
+
+Warmup (60s) begins: Tue Jul 08 15:24:02 CST 2025
+>>> 生成 perf-map（Java ↔ JIT 代码地址映射）
+>>> perf 采样 180 秒
+Warmup (60s) ends:   Tue Jul 08 15:25:04 CST 2025
+Warmup (60s) result: 776.20 ops/m
+
+Iteration 1 (180s) begins: Tue Jul 08 15:25:04 CST 2025
+[ perf record: Woken up 539431 times to write data ]
+[ perf record: Captured and wrote 6.175 MB /home/ben/workspace/perflab/perf_compress_20250708_152348/perf_F50.data (35629 samples) ]
+6.3M  ← perf.data @50Hz
+2025-07-08 15:25:36.786443 Creating database ...
+2025-07-08 15:25:36.799572 Writing records...
+2025-07-08 15:25:39.119825 Adding indexes
+2025-07-08 15:25:39.124341 Dropping unused tables
+2025-07-08 15:25:39.137175 Done
+[ perf record: Woken up 113 times to write data ]
+[ perf record: Captured and wrote 30.366 MB /home/ben/workspace/perflab/perf_compress_20250708_152348/perf_F250.data (184050 samples) ]
+31M  ← perf.data @250Hz
+2025-07-08 15:26:41.196610 Creating database ...
+2025-07-08 15:26:41.211619 Writing records...
+2025-07-08 15:26:49.474366 Adding indexes
+2025-07-08 15:26:49.479034 Dropping unused tables
+2025-07-08 15:26:49.494255 Done
+[ perf record: Woken up 497 times to write data ]
+[ perf record: Captured and wrote 126.805 MB /home/ben/workspace/perflab/perf_compress_20250708_152348/perf_F1000.data (771865 samples) ]
+127M  ← perf.data @1000Hz
+2025-07-08 15:27:51.357682 Creating database ...
+Iteration 1 (180s) ends:   Tue Jul 08 15:28:07 CST 2025
+Iteration 1 (180s) result: 719.85 ops/m
+
+Valid run!
+Score on compress: 719.85 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.001/SPECjvm2008.001.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.001
+
+Noncompliant composite result: 719.85 ops/m
+2025-07-08 15:27:51.374808 Writing records...
+2025-07-08 15:28:13.530934 Adding indexes
+2025-07-08 15:28:13.535265 Dropping unused tables
+2025-07-08 15:28:13.546945 Done
+>>> 解码并绘制火焰图
+    正在处理 perf_F50.data ...
+>>> 生成perf report 文本报告
+    正在处理 perf_F250.data ...
+>>> 生成perf report 文本报告
+    正在处理 perf_F1000.data ...
+>>> 生成perf report 文本报告
+>>> 完成！火焰图路径： /home/ben/workspace/perflab/perf_compress_20250708_152348/flamegraph.svg
+    用浏览器打开即可交互查看热点栈帧。

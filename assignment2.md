@@ -2,16 +2,18 @@
 
 ## 实验描述：
 
-### :notebook: **JDK版本** 
+### :coffee: **JDK版本** 
 
 本实验分别对4家厂商的jdk进行SPECjvm2008测试，对应版本分别是
 
-  - `jdk1.8.0_441`
-  - `bisheng-jdk1.8.0_452`
-  - `TencentKona-8.0.22-452`
-  - `dragonwell-8.25.24`
+| vendor     | jdk                        | version         |
+|------------|----------------------------|-----------------|
+| Oracal     | openjdk1.8.0_441           | 1.8.0_441       |
+| Huawei     | bisheng-jdk1.8.0_452       | 1.8.0_452       |
+| Tencent    | TencentKona-8.0.22-452     | 8.0.22-452      |
+| Alibaba    | dragonwell-8.25.24         | 8.25.24         |
 
-  虽然实验要求安装并测试各厂商**最新稳定版本**的jdk环境，但考虑SPECjvm2008的软件**兼容性**问题，对各厂商统一使用**jdk8版本**进行测试。实际上，通过操作也可以发现SPECjvm2008确实不能jdk9+软件兼容(例如bisheng21 dragonwell24等)
+虽然实验要求安装并测试各厂商**最新稳定版本**的jdk环境，但考虑SPECjvm2008的软件**兼容性**问题，对各厂商统一使用**jdk8版本**进行测试。实际上，通过操作也可以发现SPECjvm2008确实不能jdk9+软件兼容(例如bisheng21 dragonwell24等)
 
 ### :rocket: **测试过程** 
 
@@ -41,21 +43,32 @@ done
 实验共采集 12 次运行记录，涉及 4 个 JVM 分发和 3 项子测试，每项运行产生独立 HTML 报告。我们使用`report.py`自动遍历所有 SPECjvm2008.00*/*.html 文件，定位 <td> 标签中 Benchmark 和 ops/m 数值，构建统一 DataFrame 结构。为保证分析一致性，将 crypto.aes、crypto.rsa、crypto.signverify 统一为 crypto 类别，共获得 36 条数据。
 
 利用 Pandas 进行分组统计并可视化，**算数平均值结果**如下：
-![](img2/specjvm2008_jdk_compare_mean_text.png)
 
-![](img2/specjvm2008_jdk_compare_mean.png)
+<p align="center">
+  <img src="img2/specjvm2008_jdk_compare_mean_text.png" />
+</p>
+
+<p align="center">
+  <img src="img2/specjvm2008_jdk_compare_mean.png" />
+</p>
 
 **几何平均值结果**如下：
 
-![](img2/specjvm2008_jdk_compare_gmean_text.png)
+<p align="center">
+  <img src="img2/specjvm2008_jdk_compare_gmean_text.png" />
+</p>
 
-![](img2/specjvm2008_jdk_compare_gmean.png)
+<p align="center">
+  <img src="img2/specjvm2008_jdk_compare_gmean.png" />
+</p>
 
 图表说明：Dragonwell 在 compress 和 derby 上表现优异且波动较小，说明其在默认或调优参数在这类应用场景下具有稳定优势；Bisheng 在 derby 上波动较大，但均值接近其他厂商。
 
 为了进一步量化两两JVM之间的性能差异，我们使用配对 t 检验分析每个子测试的结果。以下是配对 t 检验结果：
 
-![](img2/paired_t_test_output.png)
+<p align="center">
+  <img src="img2/paired_t_test_output.png" />
+</p>
 
 ### :page_with_curl: **结论** 
 

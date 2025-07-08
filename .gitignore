@@ -4,6 +4,7 @@ SPECjvm2008/*
 !SPECjvm2008/results/
 !SPECjvm2008/results/**
 
-perf_compress_*/out.folded
-perf_compress_*/out.perf
-perf_compress_*/perf.data
+perf_compress_*/*.folded
+perf_compress_*/*.perf
+perf_compress_*/*.data
+perf_compress_*/*.sqlite

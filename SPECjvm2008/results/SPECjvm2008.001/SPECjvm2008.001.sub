@@ -1,9 +1,9 @@
 spec.jvm2008.report.result.status=Run is valid, but not compliant
-spec.jvm2008.report.result.score=733.52
+spec.jvm2008.report.result.score=719.85
 spec.jvm2008.report.result.metric=ops/m
 spec.jvm2008.report.result.workload.name=SPECjvm2008 Peak
 spec.jvm2008.report.result.workload.mode=SPECjvm2008 Peak
-spec.jvm2008.report.run.date=Sun Jul 06 22:44:37 CST 2025
+spec.jvm2008.report.run.date=Tue Jul 08 15:23:49 CST 2025
 spec.jvm2008.report.run.tester=ben
 spec.jvm2008.report.run.submitter=n/a
 spec.jvm2008.report.run.submitter.url=n/a
