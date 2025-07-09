@@ -8,8 +8,11 @@ SPECjvm2008/*
 SPECjvm2008/data/*.data
 SPECjvm2008/data/*.data.old
 SPECjvm2008/data/*.dat
+SPECjvm2008/data/*.script
 
 perf_compress_*/*.folded
 perf_compress_*/*.perf
 perf_compress_*/*.data
 perf_compress_*/*.sqlite
+
+*.pdf
