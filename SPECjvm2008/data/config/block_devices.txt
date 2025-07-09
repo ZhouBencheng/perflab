@@ -1,0 +1,44 @@
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0     4K  1 loop /snap/bare/5
+loop1         7:1    0  63.8M  1 loop /snap/core20/2571
+loop2         7:2    0  63.8M  1 loop /snap/core20/2599
+loop3         7:3    0  73.9M  1 loop /snap/core22/1963
+loop4         7:4    0  73.9M  1 loop /snap/core22/2010
+loop5         7:5    0  66.8M  1 loop /snap/core24/1006
+loop6         7:6    0  66.8M  1 loop /snap/core24/988
+loop7         7:7    0 274.4M  1 loop /snap/firefox/5600
+loop8         7:8    0 245.3M  1 loop /snap/firefox/6436
+loop9         7:9    0 349.7M  1 loop /snap/gnome-3-38-2004/143
+loop10        7:10   0 505.1M  1 loop /snap/gnome-42-2204/176
+loop11        7:11   0   516M  1 loop /snap/gnome-42-2204/202
+loop12        7:12   0 589.6M  1 loop /snap/gnome-46-2404/117
+loop13        7:13   0 404.4M  1 loop /snap/gnome-46-2404/90
+loop14        7:14   0   7.3M  1 loop /snap/gnome-clocks/469
+loop15        7:15   0  13.5M  1 loop /snap/gnome-clocks/484
+loop16        7:16   0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop17        7:17   0 207.4M  1 loop /snap/mesa-2404/495
+loop18        7:18   0 290.8M  1 loop /snap/mesa-2404/887
+loop19        7:19   0  12.9M  1 loop /snap/snap-store/1113
+loop20        7:20   0  12.2M  1 loop /snap/snap-store/1216
+loop21        7:21   0  50.9M  1 loop /snap/snapd/24505
+loop22        7:22   0  50.9M  1 loop /snap/snapd/24718
+loop23        7:23   0   568K  1 loop /snap/snapd-desktop-integration/253
+loop24        7:24   0   576K  1 loop /snap/snapd-desktop-integration/315
+sda           8:0    1     0B  0 disk 
+nvme1n1     259:0    0 476.9G  0 disk 
+├─nvme1n1p1 259:1    0   240M  0 part /boot/efi
+├─nvme1n1p2 259:2    0   128M  0 part 
+├─nvme1n1p3 259:3    0 455.9G  0 part 
+├─nvme1n1p4 259:4    0   1.1G  0 part 
+├─nvme1n1p5 259:5    0  18.2G  0 part 
+└─nvme1n1p6 259:6    0   1.4G  0 part 
+nvme0n1     259:7    0   3.7T  0 disk 
+├─nvme0n1p1 259:8    0    16M  0 part 
+├─nvme0n1p2 259:9    0 931.5G  0 part 
+├─nvme0n1p3 259:10   0   477M  0 part 
+├─nvme0n1p4 259:11   0   7.6G  0 part [SWAP]
+├─nvme0n1p5 259:12   0  47.7G  0 part /var/snap/firefox/common/host-hunspell
+│                                     /
+├─nvme0n1p6 259:13   0  44.2G  0 part /home
+├─nvme0n1p7 259:14   0   2.4T  0 part 
+└─nvme0n1p8 259:15   0   300G  0 part /home/ben/workspace

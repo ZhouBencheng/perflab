@@ -244,4 +244,11 @@ A: 针对本问题，我通过 `run_compress_flamegraph.sh` 脚本和 `perf_sqli
 ### Q3.3 Explore the benefits of combing different profiling techniques to gain a comprehensive understanding of application performance.
 
 
+A: 上述实验运用到了多种系统性能分析工具，包括 `perf stat`、`perf record`、`perf report`、`FlameGraph` 、 `perf script` + `export-to-sqlite.py` 的结构化数据分析以及运用**pipa**工具进行数据采集。使用不同性能分析工具的优势有如下几种：
 
+1. **宏观与微观**相结合，定位瓶颈更精准：`perf stat` 用于探查整体的系统资源利用率、指令执行效率、缓存命中率等宏观指标，帮助快速判断应用是否受限于 CPU、内存、缓存等硬件资源。而`perf record`、`perf report` 和 `FlameGraph` 则聚焦于函数级别的热点分布和调用路径，在代码级别定位性能瓶颈。
+2. **多维**度数据交叉验证：上述实验通过**火焰图**可视化主流程热点分布，而**结构化**的 `sqlite` 数据库则提供了更为详尽的函数调用关系、采样数量等信息。
+3. 更加**详尽**的软硬件数据采集：使用`pipa`工具对SPECjvm2008的`compress`负载进行测量，采集到的数据保存在`SPECjvm2008/data`目录下，采集结果包括
+   - `perf-stat.csv`：性能计数器统计数据，包括 CPU 利用率、指令执行效率、缓存命中率等
+   - `ps.txt`：进程状态快照，记录了各个进程的资源使用情况，类似于`top`指令的输出
+   - `config/*`：机器中各硬件的使用情况，包括 CPU、内存、磁盘、USB设备IO等

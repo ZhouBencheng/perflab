@@ -1,0 +1,73 @@
+
+SPECjvm2008 Peak
+  Properties file:   none
+  Benchmarks:        compress
+
+  WARNING: Run will not be compliant.
+  Not a compliant sequence of benchmarks for publication.
+  Property specjvm.iteration.time must be at least 240 seconds for publication.
+
+  Kit signature and checksum is validated.
+  This can take several minutes.
+  Use argument '-ikv' to skip this.
+  ....................................passed.
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   check
+  Run mode:    static run
+  Test type:   functional
+  Threads:     1
+  Iterations:  1
+  Run length:  1 operation
+
+Iteration 1 (1 operation) begins: Wed Jul 09 10:23:28 CST 2025
+Iteration 1 (1 operation) ends:   Wed Jul 09 10:23:28 CST 2025
+Iteration 1 (1 operation) result: PASSED
+
+Valid run!
+
+
+--- --- --- --- --- --- --- --- ---
+
+  Benchmark:   compress
+  Run mode:    timed run
+  Test type:   multi
+  Threads:     16
+  Warmup:      60s
+  Iterations:  1
+  Run length:  180s
+
+Warmup (60s) begins: Wed Jul 09 10:23:28 CST 2025
+Warmup (60s) ends:   Wed Jul 09 10:24:30 CST 2025
+Warmup (60s) result: 781.76 ops/m
+
+Iteration 1 (180s) begins: Wed Jul 09 10:24:30 CST 2025
+Iteration 1 (180s) ends:   Wed Jul 09 10:27:32 CST 2025
+Iteration 1 (180s) result: 758.71 ops/m
+
+Valid run!
+Score on compress: 758.71 ops/m
+
+Results are stored in: 
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.002/SPECjvm2008.002.raw
+Generating reports in:
+/home/ben/workspace/perflab/SPECjvm2008/results/SPECjvm2008.002
+
+Noncompliant composite result: 758.71 ops/m
+You need to be root to run dmidecode, skipping...
+PCI devices exported to ./data/config/pci_devices.txt
+USB devices exported to ./data/config/usb_devices.txt
+Block devices exported to ./data/config/block_devices.txt
+Hardware information exported to ./data/config/hardware.txt
+CPU information exported to ./data/config/cpu.txt
+Extended CPU information exported to ./data/config/cpu-extended.txt
+Kernel modules exported to ./data/config/modules.txt
+IP information exported to ./data/config/ip.txt
+Disk usage exported to ./data/config/disk_usage.txt
+Memory information exported to ./data/config/meminfo.txt
+CPU information exported to ./data/config/cpuinfo.txt
+Perf list exported to ./data/config/perf-list.txt
+Ulimit information exported to ./data/config/ulimit.txt
+Configuration exported to ./data/config
+Performance data collected successfully.

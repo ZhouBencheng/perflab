@@ -1,0 +1,641 @@
+ben-alienware-x15-r1
+    description: Computer
+    width: 64 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 15GiB
+     *-cpu
+          product: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+          vendor: Intel Corp.
+          physical id: 2
+          bus info: cpu@0
+          version: 6.141.1
+          size: 800MHz
+          capacity: 4600MHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities cpufreq
+          configuration: microcode=86
+     *-pci:0
+          description: Host bridge
+          product: 11th Gen Core Processor Host Bridge/DRAM Registers
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+        *-pci:0
+             description: PCI bridge
+             product: 11th Gen Core Processor PCIe Controller #1
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 05
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:123 ioport:3000(size=4096) memory:86000000-870fffff ioport:6000000000(size=8623489024)
+           *-display
+                description: VGA compatible controller
+                product: GA106M [GeForce RTX 3060 Mobile / Max-Q]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: vga_controller bus_master cap_list rom
+                configuration: driver=nouveau latency=0
+                resources: iomemory:600-5ff iomemory:620-61f irq:231 memory:86000000-86ffffff memory:6000000000-61ffffffff memory:6200000000-6201ffffff ioport:3000(size=128) memory:87000000-8707ffff
+           *-multimedia
+                description: Audio device
+                product: NVIDIA Corporation
+                vendor: NVIDIA Corporation
+                physical id: 0.1
+                bus info: pci@0000:01:00.1
+                logical name: card0
+                logical name: /dev/snd/controlC0
+                logical name: /dev/snd/hwC0D0
+                logical name: /dev/snd/pcmC0D3p
+                logical name: /dev/snd/pcmC0D7p
+                logical name: /dev/snd/pcmC0D8p
+                logical name: /dev/snd/pcmC0D9p
+                version: a1
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=snd_hda_intel latency=0
+                resources: irq:17 memory:87080000-87083fff
+              *-input:0
+                   product: HDA NVidia HDMI/DP,pcm=3
+                   physical id: 0
+                   logical name: input22
+                   logical name: /dev/input/event18
+              *-input:1
+                   product: HDA NVidia HDMI/DP,pcm=7
+                   physical id: 1
+                   logical name: input23
+                   logical name: /dev/input/event4
+              *-input:2
+                   product: HDA NVidia HDMI/DP,pcm=8
+                   physical id: 2
+                   logical name: input24
+                   logical name: /dev/input/event19
+              *-input:3
+                   product: HDA NVidia HDMI/DP,pcm=9
+                   physical id: 3
+                   logical name: input25
+                   logical name: /dev/input/event20
+        *-display
+             description: VGA compatible controller
+             product: TigerLake-H GT1 [UHD Graphics]
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             logical name: /dev/fb0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: vga_controller bus_master cap_list rom fb
+             configuration: depth=32 driver=i915 latency=0 resolution=1920,1080
+             resources: iomemory:620-61f iomemory:400-3ff irq:232 memory:6234000000-6234ffffff memory:4000000000-400fffffff ioport:4000(size=64) memory:c0000-dffff memory:4010000000-4016ffffff memory:4020000000-40ffffffff
+        *-generic:0
+             description: Signal processing controller
+             product: TigerLake-LP Dynamic Tuning Processor Participant
+             vendor: Intel Corporation
+             physical id: 4
+             bus info: pci@0000:00:04.0
+             version: 05
+             width: 64 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=proc_thermal latency=0
+             resources: iomemory:620-61f irq:16 memory:6235240000-623525ffff
+        *-generic:1 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 6
+             bus info: pci@0000:00:06.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-pci:1
+             description: PCI bridge
+             product: Tiger Lake-H Thunderbolt 4 PCI Express Root Port #0
+             vendor: Intel Corporation
+             physical id: 7
+             bus info: pci@0000:00:07.0
+             version: 05
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:124 ioport:5000(size=4096) memory:6c000000-823fffff ioport:6210000000(size=570425344)
+        *-generic:2
+             description: Signal processing controller
+             product: Tigerlake Telemetry Aggregator Driver
+             vendor: Intel Corporation
+             physical id: a
+             bus info: pci@0000:00:0a.0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=intel_vsec latency=0
+             resources: iomemory:620-61f irq:0 memory:6235290000-6235297fff
+        *-usb:0
+             description: USB controller
+             product: Tiger Lake-H Thunderbolt 4 USB Controller
+             vendor: Intel Corporation
+             physical id: d
+             bus info: pci@0000:00:0d.0
+             version: 05
+             width: 64 bits
+             clock: 33MHz
+             capabilities: xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: iomemory:620-61f irq:145 memory:6235280000-623528ffff
+        *-usb:1
+             description: USB controller
+             product: Tiger Lake-H Thunderbolt 4 NHI #0
+             vendor: Intel Corporation
+             physical id: d.2
+             bus info: pci@0000:00:0d.2
+             version: 05
+             width: 64 bits
+             clock: 33MHz
+             capabilities: usb4_host_interface bus_master cap_list
+             configuration: driver=thunderbolt latency=0
+             resources: iomemory:620-61f iomemory:620-61f irq:16 memory:6235200000-623523ffff memory:62352a4000-62352a4fff
+        *-raid
+             description: RAID bus controller
+             product: Volume Management Device NVMe RAID Controller
+             vendor: Intel Corporation
+             physical id: e
+             bus info: pci@0000:00:0e.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: raid bus_master cap_list
+             configuration: driver=vmd latency=0
+             resources: iomemory:620-61f iomemory:620-61f irq:0 memory:6232000000-6233ffffff memory:84000000-85ffffff memory:6235100000-62351fffff
+        *-communication:0
+             description: Serial controller
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 12
+             bus info: pci@0000:00:12.0
+             version: 11
+             width: 64 bits
+             clock: 33MHz
+             capabilities: 8250 bus_master cap_list
+             configuration: driver=intel_ish_ipc latency=0
+             resources: iomemory:620-61f irq:16 memory:6235270000-623527ffff
+        *-usb:2
+             description: USB controller
+             product: Tiger Lake-H USB 3.2 Gen 2x1 xHCI Host Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 11
+             width: 64 bits
+             clock: 33MHz
+             capabilities: xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: iomemory:620-61f irq:153 memory:6235260000-623526ffff
+        *-memory UNCLAIMED
+             description: RAM memory
+             product: Tiger Lake-H Shared SRAM
+             vendor: Intel Corporation
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 11
+             width: 64 bits
+             clock: 33MHz (30.3ns)
+             capabilities: cap_list
+             configuration: latency=0
+             resources: iomemory:620-61f iomemory:620-61f memory:623529c000-623529ffff memory:62352a3000-62352a3fff
+        *-serial:0
+             description: Serial bus controller
+             product: Tiger Lake-H Serial IO I2C Controller #0
+             vendor: Intel Corporation
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 11
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: irq:27 memory:4017000000-4017000fff
+        *-communication:1
+             description: Communication controller
+             product: Tiger Lake-H Management Engine Interface
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 11
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: iomemory:620-61f irq:214 memory:62352a1000-62352a1fff
+        *-pci:2
+             description: PCI bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 11
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:125 memory:87200000-872fffff
+           *-network
+                description: Wireless interface
+                product: Wi-Fi 6 AX210/AX211/AX411 160MHz
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:3b:00.0
+                logical name: wlp59s0
+                version: 1a
+                serial: 70:cd:0d:ec:47:8a
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=iwlwifi driverversion=6.8.0-60-generic firmware=86.fb5c9aeb.0 ty-a0-gf-a0-86.uc ip=10.39.216.226 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+                resources: irq:17 memory:87200000-87203fff
+        *-isa
+             description: ISA bridge
+             product: Tiger Lake-H LPC/eSPI Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 11
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+           *-pnp00:00
+                product: PnP device PNP0c02
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:01
+                product: PnP device PNP0b00
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:02
+                product: PnP device INT3f0d
+                vendor: Interphase Corporation
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:03
+                product: PnP device PNP0303
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=i8042 kbd
+           *-pnp00:04
+                product: PnP device PNP0c02
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:05
+                product: PnP device DLL0a8d
+                vendor: Dell Inc
+                physical id: 5
+                capabilities: pnp
+                configuration: driver=i8042 aux
+           *-pnp00:06
+                product: PnP device PNP0c02
+                physical id: 6
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:07
+                product: PnP device PNP0c02
+                physical id: 7
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:08
+                product: PnP device PNP0c02
+                physical id: 8
+                capabilities: pnp
+                configuration: driver=system
+        *-multimedia
+             description: Multimedia audio controller
+             product: Tiger Lake-H HD Audio Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             logical name: card1
+             logical name: /dev/snd/controlC1
+             logical name: /dev/snd/hwC1D0
+             logical name: /dev/snd/hwC1D2
+             logical name: /dev/snd/pcmC1D0c
+             logical name: /dev/snd/pcmC1D0p
+             logical name: /dev/snd/pcmC1D1c
+             logical name: /dev/snd/pcmC1D1p
+             logical name: /dev/snd/pcmC1D3p
+             logical name: /dev/snd/pcmC1D4p
+             logical name: /dev/snd/pcmC1D5p
+             logical name: /dev/snd/pcmC1D6c
+             logical name: /dev/snd/pcmC1D7c
+             version: 11
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=sof-audio-pci-intel-tgl latency=32
+             resources: iomemory:620-61f iomemory:620-61f irq:233 memory:6235298000-623529bfff memory:6235000000-62350fffff
+        *-serial:1
+             description: SMBus
+             product: Tiger Lake-H SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.4
+             bus info: pci@0000:00:1f.4
+             version: 11
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: iomemory:620-61f irq:16 memory:62352a0000-62352a00ff ioport:efa0(size=32)
+        *-serial:2
+             description: Serial bus controller
+             product: Tiger Lake-H SPI Controller
+             vendor: Intel Corporation
+             physical id: 1f.5
+             bus info: pci@0000:00:1f.5
+             version: 11
+             width: 32 bits
+             clock: 33MHz
+             configuration: driver=intel-spi latency=0
+             resources: irq:0 memory:6a800000-6a800fff
+     *-generic UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-pci:1
+          description: PCI bridge
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.1
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+          capabilities: pci normal_decode bus_master cap_list
+          configuration: driver=pcieport
+          resources: irq:178 memory:84000000-840fffff
+        *-nvme
+             description: Non-Volatile memory controller
+             product: Shenzhen Longsys Electronics Co., Ltd.
+             vendor: Shenzhen Longsys Electronics Co., Ltd.
+             physical id: 0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: nvme nvm_express bus_master cap_list
+             configuration: driver=nvme latency=0
+             resources: irq:-2147483648 memory:84000000-84003fff
+     *-pci:2
+          description: PCI bridge
+          product: 11th Gen Core Processor PCIe Controller #0
+          vendor: Intel Corporation
+          physical id: 6
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+          capabilities: pci normal_decode bus_master cap_list
+          configuration: driver=pcieport
+          resources: irq:179 memory:84100000-841fffff
+        *-nvme
+             description: Non-Volatile memory controller
+             product: Micron Technology Inc
+             vendor: Micron Technology Inc
+             physical id: 0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: nvme nvm_express bus_master cap_list
+             configuration: driver=nvme latency=0
+             resources: irq:0 memory:84100000-84103fff
+  *-scsi
+       physical id: 1
+       bus info: scsi@0
+       logical name: scsi0
+       capabilities: scsi-host
+       configuration: driver=usb-storage
+  *-nvme0
+       description: NVMe device
+       product: aigo NVMe SSD P7000E 4TB
+       physical id: 2
+       logical name: /dev/nvme0
+       version: HS15225
+       serial: 00000000000000000123
+       configuration: nqn=nqn.2014-08.com:nvme:nvm-subsystem-sn-00000000000000000123 state=live
+     *-namespace:0
+          description: NVMe disk
+          physical id: 0
+          logical name: hwmon3
+     *-namespace:1
+          description: NVMe disk
+          physical id: 2
+          logical name: /dev/ng0n1
+     *-namespace:2
+          description: NVMe disk
+          physical id: 1
+          bus info: nvme@0:1
+          logical name: /dev/nvme0n1
+          configuration: wwid=eui.00000000000000000000000000000123
+  *-nvme1
+       description: NVMe device
+       product: Micron 2300 NVMe 512GB
+       physical id: 3
+       logical name: /dev/nvme1
+       version: 23000030
+       serial: 21423239082C
+       configuration: nqn=nqn.2014-08.org.nvmexpress:13441344        21423239082CMicron 2300 NVMe 512GB state=live
+     *-namespace:0
+          description: NVMe disk
+          physical id: 0
+          logical name: hwmon4
+     *-namespace:1
+          description: NVMe disk
+          physical id: 2
+          logical name: /dev/ng1n1
+     *-namespace:2
+          description: NVMe disk
+          physical id: 1
+          bus info: nvme@1:1
+          logical name: /dev/nvme1n1
+          configuration: wwid=eui.000000000000000100a075213239082c
+  *-input:0
+       product: Lid Switch
+       physical id: 4
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: Power Button
+       physical id: 5
+       logical name: input1
+       logical name: /dev/input/event1
+       capabilities: platform
+  *-input:2
+       product: Compx 2.4G Wireless Receiver
+       physical id: 6
+       logical name: input10
+       logical name: /dev/input/event6
+       capabilities: usb
+  *-input:3
+       product: Compx 2.4G Wireless Receiver Consumer Control
+       physical id: 7
+       logical name: input11
+       logical name: /dev/input/event7
+       capabilities: usb
+  *-input:4
+       product: Compx 2.4G Wireless Receiver System Control
+       physical id: 8
+       logical name: input12
+       logical name: /dev/input/event8
+       capabilities: usb
+  *-input:5
+       product: Compx 2.4G Wireless Receiver Keyboard
+       physical id: 9
+       logical name: input13
+       logical name: /dev/input/event9
+       capabilities: usb
+  *-input:6
+       product: Compx 2.4G Wireless Receiver Mouse
+       physical id: a
+       logical name: input14
+       logical name: /dev/input/event10
+       logical name: /dev/input/mouse2
+       capabilities: usb
+  *-input:7
+       product: SSCYPL Wireless-Receiver
+       physical id: b
+       logical name: input15
+       logical name: /dev/input/event11
+       logical name: /dev/input/mouse3
+       capabilities: usb
+  *-input:8
+       product: SSCYPL Wireless-Receiver Keyboard
+       physical id: c
+       logical name: input16
+       logical name: /dev/input/event12
+       logical name: input16::capslock
+       logical name: input16::numlock
+       logical name: input16::scrolllock
+       capabilities: usb
+  *-input:9
+       product: SSCYPL Wireless-Receiver
+       physical id: d
+       logical name: input17
+       logical name: /dev/input/event13
+       capabilities: usb
+  *-input:10
+       product: DELL Technologies Keyboard
+       physical id: e
+       logical name: input18
+       logical name: /dev/input/event14
+       logical name: input18::capslock
+       logical name: input18::compose
+       logical name: input18::kana
+       logical name: input18::numlock
+       logical name: input18::scrolllock
+       capabilities: usb
+  *-input:11
+       product: Intel HID events
+       physical id: f
+       logical name: input19
+       logical name: /dev/input/event16
+       capabilities: platform
+  *-input:12
+       product: AT Translated Set 2 keyboard
+       physical id: 10
+       logical name: input2
+       logical name: /dev/input/event2
+       logical name: input2::capslock
+       logical name: input2::numlock
+       logical name: input2::scrolllock
+       capabilities: i8042
+  *-input:13
+       product: Intel HID 5 button array
+       physical id: 11
+       logical name: input20
+       logical name: /dev/input/event17
+       capabilities: platform
+  *-input:14
+       product: Dell WMI hotkeys
+       physical id: 12
+       logical name: input21
+       logical name: /dev/input/event3
+       capabilities: platform
+  *-input:15
+       product: DELL0A8D:00 06CB:CE60 Mouse
+       physical id: 13
+       logical name: input26
+       logical name: /dev/input/event21
+       logical name: /dev/input/mouse0
+       capabilities: i2c
+  *-input:16
+       product: DELL0A8D:00 06CB:CE60 Touchpad
+       physical id: 14
+       logical name: input27
+       logical name: /dev/input/event22
+       logical name: /dev/input/mouse1
+       capabilities: i2c
+  *-input:17
+       product: Video Bus
+       physical id: 15
+       logical name: input29
+       logical name: /dev/input/event23
+       capabilities: platform
+  *-input:18
+       product: Video Bus
+       physical id: 16
+       logical name: input30
+       logical name: /dev/input/event24
+       capabilities: platform
+  *-input:19
+       product: sof-hda-dsp Headphone Mic
+       physical id: 17
+       logical name: input31
+       logical name: /dev/input/event25
+  *-input:20
+       product: sof-hda-dsp HDMI/DP,pcm=3
+       physical id: 18
+       logical name: input32
+       logical name: /dev/input/event26
+  *-input:21
+       product: sof-hda-dsp HDMI/DP,pcm=4
+       physical id: 19
+       logical name: input33
+       logical name: /dev/input/event27
+  *-input:22
+       product: sof-hda-dsp HDMI/DP,pcm=5
+       physical id: 1a
+       logical name: input34
+       logical name: /dev/input/event28
+  *-input:23
+       product: Compx 2.4G Wireless Receiver
+       physical id: 1b
+       logical name: input9
+       logical name: /dev/input/event5
+       logical name: input9::capslock
+       logical name: input9::numlock
+       logical name: input9::scrolllock
+       capabilities: usb
